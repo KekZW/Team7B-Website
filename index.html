@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <title>My Project Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .navbar {
+      display: flex;
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      flex: 1;
+      padding: 14px 16px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+    }
+
+    .content {
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>Welcome to my website.</p>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="week1.html">Week 1</a>
+    <a href="week2.html">Week 2</a>
+    <a href="reflection.html">Reflection</a>
+    <a href="daily.html">Daily</a>
+    <a href="product.html">Product</a>
+  </div>
+
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is the home page. Use the menu above to explore different sections.</p>
+  </div>
+
 </body>
 </html>
