@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Project Website</title>
+  <title>River Kelvin Watch</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
@@ -15,12 +15,12 @@
       min-height: 100vh;
     }
 
-    .hero-section {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 80px 0;
-      text-align: center;
-    }
+  .hero-section {
+    background-image: url('homepage.png');
+    background-size: cover;        /* Make sure it covers the entire section */
+    background-position: center;   /* Center the image */
+    background-repeat: no-repeat;  /* Prevent repeating */
+  }
 
     .feature-card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -67,12 +67,13 @@
     }
   </style>
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container">
       <a class="navbar-brand text-white" href="index.html">
-        <i class="bi bi-house-door-fill me-2"></i>Project Website
+        <i class="bi bi-water me-2"></i>River Kelvin Watch
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -114,20 +115,76 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h1 class="display-4 mb-4">Welcome to My Project</h1>
-          <p class="lead mb-4">Explore our journey through this comprehensive project documentation and insights.</p>
-          <a href="#problem-statement" class="btn btn-light btn-lg">
-            <i class="bi bi-arrow-down-circle me-2"></i>Explore More
-          </a>
+<!-- Hero Section -->
+<section class="hero-section bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4 mb-3">River Kelvin Watch</h1>
+    <p class="lead">Real-time water monitoring and activity planning</p>
+  </div>
+</section>
+
+<!-- Feature Boxes Section -->
+<section id="app-features" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">What the App Does</h2>
+    <p class="lead text-center mb-5">
+      Our app provides near real-time data to support safe and enjoyable engagement with the River Kelvin. Key features include:
+    </p>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+          <div class="mb-3" style="font-size: 2rem;">💧</div>
+          <h5 class="mb-2">Water Monitoring</h5>
+          <p class="mb-0">Tracks water levels and river flow rates.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+          <div class="mb-3" style="font-size: 2rem;">❗</div>
+          <h5 class="mb-2">Pollution Data</h5>
+          <p class="mb-0">Access recorded pollutant levels.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+          <div class="mb-3" style="font-size: 2rem;">⭐</div>
+          <h5 class="mb-2">Activity Suggestions</h5>
+          <p class="mb-0">Based on current river conditions.</p>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Centered Last Two Boxes -->
+    <div class="row g-4 justify-content-center mt-1">
+      <div class="col-md-6 col-lg-4">
+        <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+          <div class="mb-3" style="font-size: 2rem;">📅</div>
+          <h5 class="mb-2">FORK Events</h5>
+          <p class="mb-0">Lists events from Friends of River Kelvin.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+          <div class="mb-3" style="font-size: 2rem;">📍</div>
+          <h5 class="mb-2">Station-based Suggestions</h5>
+          <p class="mb-0">Recommends activities by location.</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="https://www.figma.com/proto/cP9772Al9RxzUw6SiH1aOy/OIP-WireFrame?page-id=0%3A1&node-id=81-2648&p=f&viewport=1296%2C672%2C0.36&t=k5omXpccqACuSEUl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=81%3A2648&show-proto-sidebar=1">
+        View Hi-Fi Demo
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
 
 <!-- Problem Statement Section -->
 <section id="problem-statement" class="content-section">
@@ -136,29 +193,37 @@
       <div class="col-lg-8 mx-auto">
         <div class="card feature-card">
           <div class="card-body text-center p-5">
-            <div class="icon-wrapper mb-3">
-              <i class="bi bi-exclamation-triangle" style="font-size: 2rem; color: #dc3545;"></i>
-            </div>
+           
             <h2 class="section-title">Problem Statement</h2>
-            <p class="lead">Here we identify and describe the core problem that our project aims to solve. This section outlines the challenges and issues that need to be addressed.</p>
+            <p class="lead">
+              When conducting activities by the river, the condition of the river greatly impacts safety aspects. 
+              The Scottish Environment Protection Agency (SEPA) does publish data around river flow, but it is difficult to decipher—especially when it comes to predicting river conditions ahead of time.
+              Another aspect is that the river flow rate upstream affects pollution levels downstream, but again, this is difficult to derive from the available data.
+            </p>
 
-            <!-- Key Points with Icons -->
-            <div class="text-start mt-4">
-              <div class="d-flex align-items-start mb-3">
-                <i class="bi bi-people-fill text-primary me-3" style="font-size: 1.5rem;"></i>
-                <p class="mb-0">Lack of accessibility for non-technical users to understand environmental data.</p>
-              </div>
-              <div class="d-flex align-items-start mb-3">
-                <i class="bi bi-graph-down text-danger me-3" style="font-size: 1.5rem;"></i>
-                <p class="mb-0">Current solutions fail to provide real-time, clear summaries of river conditions.</p>
-              </div>
-              <div class="d-flex align-items-start mb-3">
-                <i class="bi bi-clock-history text-warning me-3" style="font-size: 1.5rem;"></i>
-                <p class="mb-0">Delayed or historical-only data makes timely decisions difficult for the public.</p>
-              </div>
-              <div class="d-flex align-items-start mb-3">
-                <i class="bi bi-bullseye text-success me-3" style="font-size: 1.5rem;"></i>
-                <p class="mb-0">Need for an intuitive, focused solution tailored to the needs of everyday users.</p>
+            
+
+            <!-- Key Points -->
+            <div class="mt-5">
+              <h5 class="text-center mb-4">Key Points</h5>
+              <div class="row justify-content-center g-4">
+                <div class="col-md-6 col-lg-5">
+                  <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+                    <div class="mb-3">
+                      <i class="bi bi-bar-chart-line text-primary" style="font-size: 2rem;"></i>
+                    </div>
+                    <p class="mb-0">River condition data can be difficult to understand, especially for non-technical users.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-5">
+                  <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+                    <div class="mb-3">
+                      <i class="bi bi-clock-history text-warning" style="font-size: 2rem;"></i>
+                    </div>
+                    <p class="mb-0">There is a lack of accessible tools to help predict future river conditions based on current and upstream data.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -169,110 +234,6 @@
   </div>
 </section>
 
-
-  <!-- Client Overview Section -->
-  <section class="content-section bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <div class="card feature-card">
-            <div class="card-body text-center p-5">
-              <div class="icon-wrapper">
-                <i class="bi bi-people"></i>
-              </div>
-              <h2 class="section-title">Client Overview</h2>
-              <p class="lead">Meet our client and understand their business needs, goals, and expectations. This section provides comprehensive information about who we're working with.</p>
-              <div class="row mt-4">
-                <div class="col-md-4">
-                  <div class="text-center">
-                    <i class="bi bi-building text-primary fs-1 mb-2"></i>
-                    <h5>Company Profile</h5>
-                    <p class="text-muted">Understanding the business</p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="text-center">
-                    <i class="bi bi-target text-success fs-1 mb-2"></i>
-                    <h5>Objectives</h5>
-                    <p class="text-muted">Clear goals and targets</p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="text-center">
-                    <i class="bi bi-graph-up-arrow text-warning fs-1 mb-2"></i>
-                    <h5>Expectations</h5>
-                    <p class="text-muted">Desired outcomes</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Product Overview Section -->
-  <section class="content-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <div class="card feature-card">
-            <div class="card-body text-center p-5">
-              <div class="icon-wrapper">
-                <i class="bi bi-box-seam"></i>
-              </div>
-              <h2 class="section-title">Product Overview</h2>
-              <p class="lead">Discover the solution we've developed to address the identified problems. This section showcases our product features, benefits, and implementation details.</p>
-              <div class="row mt-4">
-                <div class="col-md-6">
-                  <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body">
-                      <i class="bi bi-gear-fill text-primary fs-2 mb-3"></i>
-                      <h5 class="card-title">Features</h5>
-                      <p class="card-text">Comprehensive list of product capabilities and functionalities.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body">
-                      <i class="bi bi-rocket-takeoff text-success fs-2 mb-3"></i>
-                      <h5 class="card-title">Implementation</h5>
-                      <p class="card-text">Technical details and deployment strategy for the solution.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action Section -->
-  <section class="hero-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="mb-4">Ready to Explore More?</h2>
-          <p class="lead mb-4">Navigate through our weekly progress, reflections, and detailed product information.</p>
-          <div class="d-flex justify-content-center gap-3 flex-wrap">
-            <a href="week1.html" class="btn btn-outline-light">
-              <i class="bi bi-calendar-week me-2"></i>Week 1
-            </a>
-            <a href="week2.html" class="btn btn-outline-light">
-              <i class="bi bi-calendar-week me-2"></i>Week 2
-            </a>
-            <a href="reflection.html" class="btn btn-light">
-              <i class="bi bi-journal-text me-2"></i>View Reflections
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
