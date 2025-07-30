@@ -13,14 +13,24 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
       min-height: 100vh;
+      overflow-x: hidden; /* Prevent horizontal scroll on body */
     }
 
-  .hero-section {
-    background-image: url('images/homepage.png');
-    background-size: cover;        /* Make sure it covers the entire section */
-    background-position: center;   /* Center the image */
-    background-repeat: no-repeat;  /* Prevent repeating */
-  }
+    html {
+      overflow-x: hidden; /* Prevent horizontal scroll on html */
+    }
+
+    .hero-section {
+      background-image: url('images/homepage.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 380px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
     .feature-card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -64,6 +74,361 @@
       justify-content: center;
       margin: 0 auto 20px;
       font-size: 2rem;
+    }
+
+    .hero-fullwidth {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .hero-card {
+      position: relative;
+      height: 400px;
+      border-radius: 0;
+      overflow: hidden;
+      box-shadow: none;
+      transition: transform 0.4s ease-out;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .hero-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .hero-card:hover::before {
+      opacity: 1;
+    }
+
+    .hero-bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+      overflow: hidden;
+      user-select: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      contain: layout; /* Prevents layout shifts */
+    }
+
+    .hero-text {
+      position: absolute;
+      width: calc(100% - 40px); /* Account for padding */
+      left: 20px;
+      transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+                  transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: opacity, transform;
+      backface-visibility: hidden; /* Improves transition smoothness */
+    }
+
+    .hero-text.first {
+      opacity: 1;
+      transform: translateY(0) translateZ(0); /* Added translateZ for GPU acceleration */
+    }
+
+    .hero-text.second {
+      opacity: 0;
+      transform: translateY(20px) translateZ(0); /* Reduced from 30px to prevent overflow */
+    }
+
+    .hero-card:hover .hero-text.first {
+      opacity: 0;
+      transform: translateY(-20px) translateZ(0); /* Reduced from -30px */
+    }
+
+    .hero-card:hover .hero-text.second {
+      opacity: 1;
+      transform: translateY(0) translateZ(0);
+    }
+
+    /* Ensure smooth transitions on all devices */
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-text {
+        transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+                    transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .hero-card {
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+    /* Reduce motion for users who prefer it */
+    @media (prefers-reduced-motion: reduce) {
+      .hero-text {
+        transition: opacity 0.3s ease;
+        transform: none !important;
+      }
+      
+      .hero-card {
+        transition: transform 0.2s ease;
+      }
+      
+      .hero-card:hover .hero-text.first {
+        transform: none;
+      }
+      
+      .hero-card:hover .hero-text.second {
+        transform: none;
+      }
+    }
+
+    /* Demo Section Styles */
+    #demo-section {
+      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #demo-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .demo-content {
+      padding: 2rem 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .text-white-75 {
+      color: rgba(255, 255, 255, 0.85) !important;
+    }
+
+    .feature-item {
+      padding: 0.75rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-item:hover {
+      transform: translateX(5px);
+    }
+
+    .demo-buttons .btn {
+      transition: all 0.3s ease;
+    }
+
+    .demo-buttons .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .phone-mockup {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .phone-frame {
+      width: 280px;
+      height: 560px;
+      background: #1a1a1a;
+      border-radius: 30px;
+      padding: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .phone-frame::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: #333;
+      border-radius: 2px;
+    }
+
+    .phone-screen {
+      width: 100%;
+      height: 100%;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .demo-app {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .app-header {
+      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+      color: white;
+      padding: 10px 15px 15px;
+    }
+
+    .status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .status-icons i {
+      margin-left: 5px;
+    }
+
+    .app-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .app-nav h3 {
+      font-size: 16px;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .app-content {
+      flex: 1;
+      padding: 20px 15px;
+      background: #f8f9fa;
+    }
+
+    .location-card {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .location-card h4 {
+      font-size: 16px;
+      margin: 0 0 8px 0;
+      color: #2c3e50;
+    }
+
+    .condition-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .condition-badge.safe {
+      background: #d4edda;
+      color: #155724;
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .metric {
+      background: white;
+      border-radius: 8px;
+      padding: 12px 8px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .metric-value {
+      font-size: 14px;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 2px;
+    }
+
+    .metric-label {
+      font-size: 10px;
+      color: #6c757d;
+    }
+
+    .activities {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .activities h5 {
+      font-size: 14px;
+      margin: 0 0 10px 0;
+      color: #2c3e50;
+    }
+
+    .activity-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .activity-item {
+      font-size: 12px;
+      padding: 6px 10px;
+      background: #e3f2fd;
+      border-radius: 6px;
+      color: #1565c0;
+    }
+
+    @media (max-width: 991px) {
+      .phone-mockup {
+        margin-top: 2rem;
+      }
+      
+      .demo-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
@@ -115,11 +480,25 @@
     </div>
   </nav>
 
-<!-- Hero Section -->
-<section class="hero-section bg-primary text-white text-center py-5">
-  <div class="container">
-    <h1 class="display-4 mb-3">River Kelvin Watch</h1>
-    <p class="lead">Real-time water monitoring and activity planning</p>
+<section class="hero-fullwidth">
+  <div class="hero-card">
+    <img src="images/homepage.png" alt="River Kelvin" class="hero-bg" />
+    <div class="hero-content">
+      <div class="hero-text first">
+        <h1 class="display-4">River Kelvin Watch</h1>
+        <p class="lead">Real-time water monitoring and activity planning</p>
+      </div>
+      <div class="hero-text second">
+        <h1 class="display-4">Background</h1>
+        <p class="lead">The River Clyde is one of Scotland’s most significant rivers, flowing for about 170 kilometers from its source in the Lowther Hills 
+          through Glasgow and into the Firth of Clyde. Historically, the Clyde played a crucial role in Scotland’s industrial growth during the 18th and 19th centuries, 
+          becoming a world-renowned center for shipbuilding and maritime trade. 
+          For local communities, the Clyde has long been a source of livelihood, identity, and pride. Its banks supported thriving industries, provided jobs, 
+          and shaped Glasgow into a major economic hub. Today, while its industrial role has declined, the river remains important to locals for recreation, tourism, 
+          conservation, and regeneration projects. Efforts to clean and revitalize the Clyde have also restored wildlife habitats and public access, 
+          reinforcing its cultural and environmental value to the people of Scotland.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -127,7 +506,7 @@
 <section id="problem-statement" class="content-section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto">
+      <div class="col-lg-12 mx-auto">
         <div class="card feature-card">
           <div class="card-body text-center p-5">
            
@@ -137,8 +516,6 @@
               The Scottish Environment Protection Agency (SEPA) does publish data around river flow, but it is difficult to decipher—especially when it comes to predicting river conditions ahead of time.
               Another aspect is that the river flow rate upstream affects pollution levels downstream, but again, this is difficult to derive from the available data.
             </p>
-
-            
 
             <!-- Key Points -->
             <div class="mt-5">
@@ -174,12 +551,7 @@
 <!-- Feature Boxes Section -->
 <section id="app-features" class="py-5 bg-light">
   <div class="container">
-    <div class="position-relative mb-4">
-      <a href="https://www.figma.com/proto/cP9772Al9RxzUw6SiH1aOy/OIP-WireFrame?page-id=0%3A1&node-id=51-740&viewport=1465%2C1064%2C0.45&t=eFmZtdutYslGDWrH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=51%3A740&show-proto-sidebar=1"
-        target="_blank" rel="noopener noreferrer"
-        class="btn btn-primary position-absolute top-0 end-0">
-        Demo
-      </a>
+    <div class="mb-4">
       <h2 class="text-center">Our Proposed Solution: River Kelvin Watch</h2>
     </div>
     <p class="lead text-center mb-5">
@@ -231,9 +603,129 @@
   </div>
 </section>
 
+<!-- Demo Section -->
+<section id="demo-section" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="demo-content">
+          <h2 class="section-title mb-4 text-white">See River Kelvin Watch in Action</h2>
+          <p class="lead mb-4 text-white-75">
+            Experience our intuitive interface designed to make river monitoring accessible to everyone. 
+            Our interactive prototype demonstrates real-time data visualization and activity recommendations.
+          </p>
+          
+          <div class="demo-features mb-4">
+            <div class="feature-item d-flex align-items-center mb-3">
+              <div class="feature-icon me-3">
+                <i class="bi bi-phone text-primary" style="font-size: 1.5rem;"></i>
+              </div>
+              <div>
+                <h6 class="mb-1">Mobile-First Design</h6>
+                <small class="text-muted">Optimized for on-the-go river monitoring</small>
+              </div>
+            </div>
+            
+            <div class="feature-item d-flex align-items-center mb-3">
+              <div class="feature-icon me-3">
+                <i class="bi bi-speedometer2 text-success" style="font-size: 1.5rem;"></i>
+              </div>
+              <div>
+                <h6 class="mb-1">Real-Time Updates</h6>
+                <small class="text-muted">Live data from SEPA monitoring stations</small>
+              </div>
+            </div>
+            
+            <div class="feature-item d-flex align-items-center mb-3">
+              <div class="feature-icon me-3">
+                <i class="bi bi-shield-check text-warning" style="font-size: 1.5rem;"></i>
+              </div>
+              <div>
+                <h6 class="mb-1">Safety Alerts</h6>
+                <small class="text-muted">Warning for unsafe conditions</small>
+              </div>
+            </div>
+          </div>
 
+          <div class="demo-buttons">
+            <a href="https://www.figma.com/proto/cP9772Al9RxzUw6SiH1aOy/OIP-WireFrame?page-id=0%3A1&node-id=51-740&viewport=1465%2C1064%2C0.45&t=eFmZtdutYslGDWrH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=51%3A740&show-proto-sidebar=1"
+              target="_blank" rel="noopener noreferrer"
+              class="btn btn-light btn-lg me-3 mb-2">
+              <i class="bi bi-play-circle me-2"></i>Try Interactive Demo
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="demo-preview">
+          <div class="phone-mockup">
+            <div class="phone-frame">
+              <div class="phone-screen">
+                <div class="demo-app">
+                  <div class="app-header">
+                    <div class="status-bar">
+                      <span class="time">9:41</span>
+                      <div class="status-icons">
+                        <i class="bi bi-wifi"></i>
+                        <i class="bi bi-battery-full"></i>
+                      </div>
+                    </div>
+                    <div class="app-nav">
+                      <h3>River Kelvin Watch</h3>
+                      <i class="bi bi-water"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="app-content">
+                    <div class="location-card">
+                      <h4>Kelvingrove Park</h4>
+                      <div class="condition-badge safe">Safe for Activities</div>
+                    </div>
+                    
+                    <div class="metrics-grid">
+                      <div class="metric">
+                        <div class="metric-value">1.2m</div>
+                        <div class="metric-label">Water Level</div>
+                      </div>
+                      <div class="metric">
+                        <div class="metric-value">Clean</div>
+                        <div class="metric-label">Pollution Level</div>
+                      </div>
+                      <div class="metric">
+                        <div class="metric-value">Good</div>
+                        <div class="metric-label">Water Quality</div>
+                      </div>
+                    </div>
+                    
+                    <div class="activities">
+                      <h5>Recommended Activities</h5>
+                      <div class="activity-list">
+                        <div class="activity-item">🚣‍♂️ Kayaking</div>
+                        <div class="activity-item">🎣 Fishing</div>
+                        <div class="activity-item">🚶‍♀️ Walking</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    function scrollToFeatures() {
+      document.getElementById('app-features').scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+    }
+  </script>
 </body>
 </html>
