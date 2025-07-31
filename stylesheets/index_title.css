@@ -6,52 +6,52 @@
 .wrapper-title {
 	position: relative;
 	text-align: center;
-  }
-  
-  .wrapper-title h1 {
-	color: #fff;
-	font-size: 6em;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	margin: 0;
-	white-space: nowrap;
-	display: flex;
-	gap: 0.3em;
-	justify-content: center;
-  }
-  
-  .wrapper-title h1 span {
+}
+
+.wrapper-title h1 {
+    color: #fff;
+    font-size: 6em; /* Scales with viewport width */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    white-space: nowrap; /* Keep nowrap if you want it to always try to stay on one line */
+    display: flex;
+    gap: 0.3em;
+    justify-content: center;
+}
+
+.wrapper-title h1 span {
 	display: inline-block;
-  }
-  
-  /* Outline (top h1) */
-  .wrapper-title h1:nth-child(1) span {
+}
+
+/* Outline (top h1) */
+.wrapper-title h1:nth-child(1) span {
 	color: transparent;
 	-webkit-text-stroke: 2px white;
-  }
-  
-  /* Animated fill (bottom h1) */
-  .wrapper-title h1:nth-child(2) span {
+}
+
+/* Animated fill (bottom h1) */
+.wrapper-title h1:nth-child(2) span {
 	color: white;
 	animation: animate 4s ease-in-out infinite;
-  }
-  
-  /* Add animation delay per word */
-  .wrapper-title h1:nth-child(2) span:nth-child(1) {
+}
+
+/* Add animation delay per word */
+.wrapper-title h1:nth-child(2) span:nth-child(1) {
 	animation-delay: 0s;
-  }
-  .wrapper-title h1:nth-child(2) span:nth-child(2) {
+}
+.wrapper-title h1:nth-child(2) span:nth-child(2) {
 	animation-delay: 0.2s;
-  }
-  .wrapper-title h1:nth-child(2) span:nth-child(3) {
+}
+.wrapper-title h1:nth-child(2) span:nth-child(3) {
 	animation-delay: 0.4s;
-  }
-  
-  @keyframes animate {
+}
+
+@keyframes animate {
 	0%, 100% {
-	  clip-path: polygon(
+	clip-path: polygon(
 		0% 45%,
 		16% 44%,
 		33% 50%,
@@ -61,11 +61,11 @@
 		100% 52%,
 		100% 100%,
 		0% 100%
-	  );
+	);
 	}
-  
+
 	50% {
-	  clip-path: polygon(
+	clip-path: polygon(
 		0% 60%,
 		15% 65%,
 		34% 66%,
@@ -75,11 +75,34 @@
 		100% 46%,
 		100% 100%,
 		0% 100%
-	  );
+	);
 	}
-  }
-  
-  .lead {
+}
+
+.wrapper-title .lead {
 	margin-top: 10em;
-  }
-  
+}
+
+/* Add a min-font-size to prevent it from becoming too small */
+
+@media (max-width: 862px) {
+    .wrapper-title h1 {
+        font-size: 12vw;
+		white-space: wrap;
+		flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+	.wrapper-title .lead {
+		display: none;
+	}
+}
+
+@media (max-width: 530px) {
+    .wrapper-title h1 {
+        font-size: 5em;
+		white-space: wrap;
+		flex-wrap: wrap;
+        padding: 0 10px;
+    }
+}
