@@ -9,6 +9,8 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/daily.css">
+
 </head>
 
 <body>
@@ -57,225 +59,237 @@
       </div>
     </div>
   </nav>
-<!-- Daily Reflection Section -->
-<section id="daily-reflection" class="content-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <!-- Vertical Nav Pills -->
-        <div class="nav flex-column nav-pills me-3 bg-light" id="v-tabs" role="tablist" aria-orientation="vertical">
 
-            <!-- Week 1 -->
-            <h6 class="mt-3 mb-2 text-muted">Week 1</h6>
-            <button class="nav-link active" id="day1-tab" data-bs-toggle="pill" data-bs-target="#day1" type="button" role="tab">Day 1</button>
-            <button class="nav-link" id="day2-tab" data-bs-toggle="pill" data-bs-target="#day2" type="button" role="tab">Day 2</button>
-            <button class="nav-link" id="day3-tab" data-bs-toggle="pill" data-bs-target="#day3" type="button" role="tab">Day 3</button>
-            <button class="nav-link" id="day4-tab" data-bs-toggle="pill" data-bs-target="#day4" type="button" role="tab">Day 4</button>
+  <!-- Daily Reflection Section -->
+  <div class="daily-reflection-container">
+    <div class="container">
+      <div class="reflection-card">
+        <div class="row g-0">
+          <div class="col-lg-3">
+            <!-- Vertical Nav Pills -->
+            <div class="sidebar-nav">
+              <!-- Week 1 -->
+              <h6 class="week-header">Week 1</h6>
+              <div class="nav flex-column nav-pills" id="v-tabs" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="day1-tab" data-bs-toggle="pill" data-bs-target="#day1" type="button" role="tab">Day 1</button>
+                <button class="nav-link" id="day2-tab" data-bs-toggle="pill" data-bs-target="#day2" type="button" role="tab">Day 2</button>
+                <button class="nav-link" id="day3-tab" data-bs-toggle="pill" data-bs-target="#day3" type="button" role="tab">Day 3</button>
+                <button class="nav-link" id="day4-tab" data-bs-toggle="pill" data-bs-target="#day4" type="button" role="tab">Day 4</button>
 
-            <!-- Week 2 -->
-            <h6 class="mt-4 mb-2 text-muted">Week 2</h6>
-            <button class="nav-link" id="day5-tab" data-bs-toggle="pill" data-bs-target="#day5" type="button" role="tab">Day 5</button>
-            <button class="nav-link" id="day6-tab" data-bs-toggle="pill" data-bs-target="#day6" type="button" role="tab">Day 6</button>
-            <button class="nav-link" id="day7-tab" data-bs-toggle="pill" data-bs-target="#day7" type="button" role="tab">Day 7</button>
-            <button class="nav-link" id="day8-tab" data-bs-toggle="pill" data-bs-target="#day8" type="button" role="tab">Day 8</button>
-            <button class="nav-link" id="day9-tab" data-bs-toggle="pill" data-bs-target="#day9" type="button" role="tab">Day 9</button>
+                <!-- Week 2 -->
+                <h6 class="week-header">Week 2</h6>
+                <button class="nav-link" id="day5-tab" data-bs-toggle="pill" data-bs-target="#day5" type="button" role="tab">Day 5</button>
+                <button class="nav-link" id="day6-tab" data-bs-toggle="pill" data-bs-target="#day6" type="button" role="tab">Day 6</button>
+                <button class="nav-link" id="day7-tab" data-bs-toggle="pill" data-bs-target="#day7" type="button" role="tab">Day 7</button>
+                <button class="nav-link" id="day8-tab" data-bs-toggle="pill" data-bs-target="#day8" type="button" role="tab">Day 8</button>
+                <button class="nav-link" id="day9-tab" data-bs-toggle="pill" data-bs-target="#day9" type="button" role="tab">Day 9</button>
 
-            <!-- Week 3 -->
-            <h6 class="mt-4 mb-2 text-muted">Week 3</h6>
-            <button class="nav-link" id="day10-tab" data-bs-toggle="pill" data-bs-target="#day10" type="button" role="tab">Day 10</button>
-            <button class="nav-link" id="day11-tab" data-bs-toggle="pill" data-bs-target="#day11" type="button" role="tab">Day 11</button>
-            <button class="nav-link" id="day12-tab" data-bs-toggle="pill" data-bs-target="#day12" type="button" role="tab">Day 12</button>
-            <button class="nav-link" id="day13-tab" data-bs-toggle="pill" data-bs-target="#day13" type="button" role="tab">Day 13</button>
-            <button class="nav-link" id="day14-tab" data-bs-toggle="pill" data-bs-target="#day14" type="button" role="tab">Day 14</button>
-
-        </div>
-    </div>
-
-      <div class="col-md-9">
-        <div class="tab-content" id="v-tabs-content">
-       <div class="tab-pane fade show active" id="day1" role="tabpanel">
-        <h5>22/7/2025</h5>
-        <p>In the morning, we conducted a lecture on the importance of asking the right questions. From there our team decided to sit together and brainstorm some questions, mainly focusing on clarifying the questions that we had about the questions statement.</p>
-        <p>Some of the questions we had are:</p>
-        <ul>
-          <li>Who is the target audience, who is going to use</li>
-          <li>What does river condition mean?</li>
-          <li>Are there any other data sources that we can use, other than SEPA as it seems limited.</li>
-          <li>What are the main concerns that we should be looking out for?</li>
-        </ul>
-
-        <p>The partner meeting have helped us in clarifying and understanding what the whole project is about, we also got a chance to learn something new regarding the river through the talk we had with the partner. We were quite glad that we were able to used what we learnt in class to action and was able to drill down the problem statement to better understand the requirements.</p>
-
-        <p>During the meeting, we also gave out suggestions of possible solutions, which was an easy-to-use mobile application. While the partner was receptive to this idea, she also suggested we look into Information Display Systems that are used on beaches to tell the public basic information.</p>
-
-        <p>After the meeting, we decided to first consolidate our findings from the meeting into a list in order to prevent any one person from being out of the loop and ended the day there.</p>
-      </div>
-
-      <div class="tab-pane fade" id="day2" role="tabpanel">
-            <h5>23/7/2025</h5>
-            <p>After lecutre, we came together and list out all possible ideas during a group discussion where we came with:</p>
-              <ul>
-                <li>Mobile Application</li>
-                <li>Information Display System</li>
-                <li>QR Code + Website</li>
-              </ul>  
-            <p>The following are images of the brainstorming:</p>
-            <img src="images/Brainstorm.jpg" alt="Brainstorming 1" width="800"/>
-            <img src="images/Brainstorm2.jpg" alt="Brainstorming 2" width="800"/>
-            <p></p>
-            <p>After the brainstorming, we decided to do some research on the different ideas that we had and drawing it out, we dicuss regarding the feasibility of each idea and also the cost of making the product.</p>
-            <p>Based on what we see, the idea that cost the most would be the Information Display System (need setup and constant power source), followed by Website (need hosting) and lastly the mobile app.</p>
-            <p>In the end, we chose to create a mobile application, as it was the most cost effective and is able to meet the requirements set by the partner. However, most importantly it will allow for quick and easy access to the information without the need of heading down to the actual river.</p>
+                <!-- Week 3 -->
+                <h6 class="week-header">Week 3</h6>
+                <button class="nav-link" id="day10-tab" data-bs-toggle="pill" data-bs-target="#day10" type="button" role="tab">Day 10</button>
+                <button class="nav-link" id="day11-tab" data-bs-toggle="pill" data-bs-target="#day11" type="button" role="tab">Day 11</button>
+                <button class="nav-link" id="day12-tab" data-bs-toggle="pill" data-bs-target="#day12" type="button" role="tab">Day 12</button>
+                <button class="nav-link" id="day13-tab" data-bs-toggle="pill" data-bs-target="#day13" type="button" role="tab">Day 13</button>
+                <button class="nav-link" id="day14-tab" data-bs-toggle="pill" data-bs-target="#day14" type="button" role="tab">Day 14</button>
+              </div>
             </div>
+          </div>
 
-            <div class="tab-pane fade" id="day3" role="tabpanel">
-            <h5>24/7/2025</h5>
-            <p>We first created a storyboard to better understand how the app should work, using online resources we were able to create a general process flow to better understand and see how the product should work.</p>
-            <img src="images/StoryBoard.png" alt="Storyboard" width="800"/>
-            <p>After that, we created a low fidelity prototype on figma to visualize the app's possible layout and functionality.</p>
-            <p>The features are:</p>
-            <ul>
-              <li>General Safety Information</li>
-              <li>Current Water Level</li>
-              <li>Charts that show both historical data and also prediction</li>
-              <li>Current Water Flow</li>
-              <li>Latest River Pollution Data</li>
-            </ul>
-            <p>Even though we had created a low fidelity prototype, we knew that there was still a lot of work to be done before it could be considered a viable product, as such we spend the rest of the day refining the prototype, removing while also adding to hopefully meet the requirements set by the partner</p>
-            <p>We also conducted our first round of groundworking, where we visited the River Kelvin after school to learn more about the place</p>
-            <img src="images/River1.jpg" alt="River Kelvin" width="800"/>
-            <img src="images/River2.jpg" alt="River Kelvin" width="800"/>
-            <img src="images/River3.jpg" alt="River Kelvin" width="800"/>
-            <p>We also found out that there is a few warning poster that is already in place, but is often hidden and dirty, with some words fading.</p>
-            <img src="images/Warning1.jpg" alt="River Kelvin" width="800"/>
-            <img src="images/Warning2.jpg" alt="River Kelvin" width="800"/>
-            <img src="images/warning3.jpg" alt="River Kelvin" width="800"/>  
-            <p>We also found information board, such as a bird information and also notice board, but each of them seems unused and not updated often.</p>
-            <img src="images/NoticeBoard.jpg" alt="Notice Board" width="400"/>
-            <img src="images/NoticeBoard2.jpg" alt="Notice Board" width="400"/>    
-            <img src="images/NoticeBoard(FORK).jpg" alt="Notice Board" width="400"/>  
-            <img src="images/BirdInfo.jpg" alt="Bird Information" width="400"/>
-            <p>From the groundworking, we were able to see that there is a need for a better way to inform the public about the river condition, as the current information is not easily noticable and also does not seem that updated.</p>
-            </div>
+          <div class="col-lg-9">
+            <div class="content-area">
+              <div class="tab-content" id="v-tabs-content">
+                <div class="tab-pane fade show active" id="day1" role="tabpanel">
+                  <h5 class="day-title">22/7/2025</h5>
+                  <p class="content-paragraph">In the morning, we conducted a lecture on the importance of asking the right questions. From there our team decided to sit together and brainstorm some questions, mainly focusing on clarifying the questions that we had about the questions statement.</p>
+                  
+                  <p class="content-paragraph">Some of the questions we had are:</p>
+                  <ul class="content-list">
+                    <li>Who is the target audience, who is going to use</li>
+                    <li>What does river condition mean?</li>
+                    <li>Are there any other data sources that we can use, other than SEPA as it seems limited.</li>
+                    <li>What are the main concerns that we should be looking out for?</li>
+                  </ul>
 
-            <div class="tab-pane fade" id="day4" role="tabpanel">
-            <h5>25/7/2025</h5>
-            <p>We had a lecture regarding prototyping this morning, as such we were able to use what 
-              we learn to finetune our low fidelity prototype. At first we focus on making the feature, 
-              but we now know that we should make a bad product, to understand the pain points better to 
-              better create a new prototype.</p>
-            <p>From here, we tested our prototypes within the group, knowing that the prototype is mainly for testing our ideas, we kept testing to find issues with our initial prototype.</p>
-            <p>We also created a list of issues that we found with the prototype, such as:</p>
-            <ul>
-              <li>Confusing charts</li>
-              <li>Hard to navigate</li>
-              <li>Difficulty in understanding the rationale behind one of the features (taking photo)</li>
-            </ul>
+                  <p class="content-paragraph">The partner meeting have helped us in clarifying and understanding what the whole project is about, we also got a chance to learn something new regarding the river through the talk we had with the partner. We were quite glad that we were able to used what we learnt in class to action and was able to drill down the problem statement to better understand the requirements.</p>
 
-            <p>From here, we planned out on what can be used and what must be fixed in our high fidelity. However, what we focus more on about was the pitch video as it was due to this day. </p>
-            <p>Throughout the week, we had already created a powerpoint presentation and so while some of us were planning out the high fidelity prototype, others were working on the presentation and scripts.</p>
-            
-            <section id="pitch-video" class="content-section">
-                <div class="container text-center">
-                    <h2 class="section-title">Pitch Video</h2>
-                    <div class="ratio ratio-16x9">
-                    <iframe 
-                        src="https://www.youtube.com/embed/36tsaxXB6p4" 
-                        title="Pitch Video"
-                        allowfullscreen>
-                    </iframe>
-                    </div>
+                  <p class="content-paragraph">During the meeting, we also gave out suggestions of possible solutions, which was an easy-to-use mobile application. While the partner was receptive to this idea, she also suggested we look into Information Display Systems that are used on beaches to tell the public basic information.</p>
+
+                  <p class="content-paragraph">After the meeting, we decided to first consolidate our findings from the meeting into a list in order to prevent any one person from being out of the loop and ended the day there.</p>
                 </div>
-                </section>
-          
+
+                <div class="tab-pane fade" id="day2" role="tabpanel">
+                  <h5 class="day-title">23/7/2025</h5>
+                  <p class="content-paragraph">After lecture, we came together and list out all possible ideas during a group discussion where we came with:</p>
+                  <ul class="content-list">
+                    <li>Mobile Application</li>
+                    <li>Information Display System</li>
+                    <li>QR Code + Website</li>
+                  </ul>  
+
+                  <p>The following are images of the brainstorming:</p>
+                  <img src="images/Brainstorm.jpg" alt="Brainstorming 1" width="800"/>
+                  <img src="images/Brainstorm2.jpg" alt="Brainstorming 2" width="800"/>
+                  
+                  <p class="content-paragraph">After the brainstorming, we decided to do some research on the different ideas that we had and drawing it out, we dicuss regarding the feasibility of each idea and also the cost of making the product.</p>
+                  <p class="content-paragraph">Based on what we see, the idea that cost the most would be the Information Display System (need setup and constant power source), followed by Website (need hosting) and lastly the mobile app.</p>
+                  
+                </div>
+
+                <div class="tab-pane fade" id="day3" role="tabpanel">
+                  <h5 class="day-title">24/7/2025</h5>
+                  <p class="content-paragraph">We first created a storyboard to better understand how the app should work, using online resources we were able to create a general process flow to better understand and see how the product should work.</p>
+                  <img src="images/StoryBoard.png" alt="Storyboard" class="content-image" width="800"/>
+                  <p class="content-paragraph">After that, we created a low fidelity prototype on figma to visualize the app's possible layout and functionality.</p>
+                  <p class="content-paragraph">The features are:</p>
+                  <ul class="content-list">
+                    <li>General Safety Information</li>
+                    <li>Current Water Level</li>
+                    <li>Charts that show both historical data and also prediction</li>
+                    <li>Current Water Flow</li>
+                    <li>Latest River Pollution Data</li>
+                  </ul>
+                  <p class="content-paragraph">Even though we had created a low fidelity prototype, we knew that there was still a lot of work to be done before it could be considered a viable product, as such we spend the rest of the day refining the prototype, removing while also adding to hopefully meet the requirements set by the partner</p>
+                  <p class="content-paragraph">We also conducted our first round of groundworking, where we visited the River Kelvin after school to learn more about the place</p>
+                  
+                  <div class="image-gallery">
+                    <img src="images/River1.jpg" alt="River Kelvin" class="content-image"/>
+                    <img src="images/River2.jpg" alt="River Kelvin" class="content-image"/>
+                    <img src="images/River3.jpg" alt="River Kelvin" class="content-image"/>
+                  </div>
+                  
+                  <p class="content-paragraph">We also found out that there is a few warning poster that is already in place, but is often hidden and dirty, with some words fading.</p>
+                  
+                  <div class="image-gallery">
+                    <img src="images/Warning1.jpg" alt="River Kelvin Warning Sign" class="content-image"/>
+                    <img src="images/Warning2.jpg" alt="River Kelvin Warning Sign" class="content-image"/>
+                    <img src="images/warning3.jpg" alt="River Kelvin Warning Sign" class="content-image"/>
+                  </div>
+                  
+                  <p class="content-paragraph">We also found information board, such as a bird information and also notice board, but each of them seems unused and not updated often.</p>
+                  
+                  <div class="notice-board-gallery">
+                    <img src="images/NoticeBoard.jpg" alt="Notice Board" class="content-image"/>
+                    <img src="images/NoticeBoard2.jpg" alt="Notice Board" class="content-image"/>
+                    <img src="images/NoticeBoard(FORK).jpg" alt="Notice Board" class="content-image"/>
+                    <img src="images/BirdInfo.jpg" alt="Bird Information" class="content-image"/>
+                  </div>
+                  
+                  <p class="content-paragraph">From the groundworking, we were able to see that there is a need for a better way to inform the public about the river condition, as the current information is not easily noticeable and also does not seem that updated.</p>
+                </div>
+
+                <div class="tab-pane fade" id="day4" role="tabpanel">
+                  <h5 class="day-title">25/7/2025</h5>
+                  <p class="content-paragraph">We had a lecture regarding prototyping this morning, as such we were able to use what we learn to finetune our low fidelity prototype. At first we focus on making the feature, but we now know that we should make a bad product, to understand the pain points better to better create a new prototype.</p>
+                  <p class="content-paragraph">From here, we tested our prototypes within the group, knowing that the prototype is mainly for testing our ideas, we kept testing to find issues with our initial prototype.</p>
+                  <p class="content-paragraph">We also created a list of issues that we found with the prototype, such as:</p>
+                  <ul class="content-list">
+                    <li>Confusing charts</li>
+                    <li>Hard to navigate</li>
+                    <li>Difficulty in understanding the rationale behind one of the features (taking photo)</li>
+                  </ul>
+
+                  <p class="content-paragraph">From here, we planned out on what can be used and what must be fixed in our high fidelity. However, what we focus more on about was the pitch video as it was due to this day.</p>
+                  <p class="content-paragraph">Throughout the week, we had already created a powerpoint presentation and so while some of us were planning out the high fidelity prototype, others were working on the presentation and scripts.</p>
+                  
+                  <div class="pitch-video-section">
+                    <h2 class="pitch-video-title">Pitch Video</h2>
+                    <div class="ratio ratio-16x9 video-container">
+                      <iframe 
+                          src="https://www.youtube.com/embed/36tsaxXB6p4" 
+                          title="Pitch Video"
+                          allowfullscreen>
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="day5" role="tabpanel">
+                  <h5 class="day-title">28/07/2025</h5>
+                  <p class="content-paragraph">We began the day by first confirming the features that we wanted to have in our product and then began the creation of our high fidelity prototype. We similar used figma to design and plan out the navigation of the app, through out the development, we faced some issues as we did not really understand how to use the more advanced features of figma. However, luckily the internet is there to help us and we were able to create a initial high fidelity prototype.</p>
+                  <img src="images/Hi-Fi(Initial).jpg" alt="Hi-Fi(Initial)" class="content-image" width="800"/>
+                  <p class="content-paragraph">After the creation, we spotted some issue with the navigation and also how it should start up, from there we began further discussion to get everyone on the same page and also to vote on what should be done</p>
+                  <p class="content-paragraph">We also found out that the pollution chart might be a little too confusing from people to understand, as such we began creating another home screen to try do an A/B testing</p>
+                  <p class="content-paragraph">The current issue that we have now is that we need client feedback to better improve our prototypes.</p>
+                </div>
+
+                <div class="tab-pane fade" id="day6" role="tabpanel">
+                  <h5 class="day-title">29/07/2025</h5>
+                  <p class="content-paragraph">Today we received the feedback for our first pitch video, it was mostly positive, however the issue came with the understanding of the problem statement and also the project requirements, where we did not show enough regarding the forecasting and prediction of river kelvin. As such we decided to include them into our high fidelity prototype, making it more obvious for users to use and predict future conditions.</p>
+                  <p class="content-paragraph">We also have started the initial draft of our poster, which is currently a work in progress, where we plan to focus more on selling the product than explaining what it does.</p>
+                  <img src="images/Poster(initial).jpg" alt="poster(Initial)" class="content-image" width="800"/>
+                </div>
+
+                <div class="tab-pane fade" id="day7" role="tabpanel">
+                  <h5 class="day-title">30/07/2025</h5>
+                  <p class="content-paragraph">We continue redesigning the app, mainly changing how the forecasting works. After doing some internal test run, we found out that the readability of the forecast was not that good, as such we tested different version and settle for one that just overrides the entire page to the forecast frame.</p>
+                  <p class="content-paragraph">Our group have come to the understanding that no matter what there is still rooms for improvement and also that we should keep refining the prototype until it is more usable and when we are satisfied with it.</p>
+                  <p class="content-paragraph">We were also able to create a second draft of the poster and also created a logo for our mobile application.</p>
+                  
+                  <div class="image-gallery">
+                    <img src="images/Poster(Second).jpg" alt="poster(Second)" class="content-image"/>
+                    <img src="images/Logo.jpg" alt="Logo" class="content-image"/>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="day8" role="tabpanel">
+                  <h5 class="day-title">31/07/2025</h5>
+                  <p class="content-paragraph">Today, we conducted our second and possibly last partner meeting. The main focus for this meeting was to showcase our chosen high-fidelity prototype and gather final feedback from our partners.</p>
+
+                  <p class="content-paragraph">Talk about what feedback was given</p>
+                  <ul class="content-list">
+                    <li>Feedback 1</li>
+                    <li>Feedback 2</li>
+                    <li>Feedback 3</li>
+                  </ul>
+
+                  <p class="content-paragraph">After class, we went again to River Kelvin to conduct usability testing, where we approached members of the public to test our prototypes and also gather their thoughts and feedbacks.</p>
+                  
+                  <p class="content-paragraph">Add Pictures here</p>
+
+                  <p class="content-paragraph">Talk about what feedback was given</p>
+                  <ul class="content-list">
+                    <li>Feedback 1</li>
+                    <li>Feedback 2</li>
+                    <li>Feedback 3</li>
+                  </ul>
+                </div>
+
+                <div class="tab-pane fade" id="day9" role="tabpanel">
+                  <h5 class="day-title">01/08/2025</h5>
+                  <p class="content-paragraph">Summary</p>
+                </div>
+
+                <div class="tab-pane fade" id="day10" role="tabpanel">
+                  <h5 class="day-title">04/08/2025</h5>
+                  <p class="content-paragraph">Summary</p>
+                </div>
+
+                <div class="tab-pane fade" id="day11" role="tabpanel">
+                  <h5 class="day-title">05/08/2025</h5>
+                  <p class="content-paragraph">Summary</p>
+                </div>
+
+                <div class="tab-pane fade" id="day12" role="tabpanel">
+                  <h5 class="day-title">06/08/2025</h5>
+                  <p class="content-paragraph">Summary</p>
+                </div>
+
+                <div class="tab-pane fade" id="day13" role="tabpanel">
+                  <h5 class="day-title">07/08/2025</h5>
+                  <p class="content-paragraph">Summary</p>
+                </div>
+
+                <div class="tab-pane fade" id="day14" role="tabpanel">
+                  <h5 class="day-title">08/08/2025</h5>
+                  <p class="content-paragraph">Summary</p>
+                </div>
+              </div>
+            </div>
           </div>
-
-            <div class="tab-pane fade" id="day5" role="tabpanel">
-            <h5>28/07/2025</h5>
-            <p>We began the day by first confirming the features that we wanted to have in our product and then began the creation of our high fidelity prototype.
-              We similar used figma to design and plan out the nevigation of the app, through out the development, 
-              we faced some issues as we did not really understand how to use the more advanced features of figma. However, luckly the internet is there to help us and we were able to create a inital high fidelity prototype.</p>
-            <img src="images/Hi-Fi(Initial).jpg" alt="Hi-Fi(Initial)" width="800"/>
-            <p>After the creation, we spotted some issue with the navigation and also how it should start up, from there we began further discussion to get everyone on the same page and also to vote on what should be done</p>
-            <p>We also found out that the pollution chart might be a little too confusing from people to understand, as such we began creating another home screen to try do an A/B testing</p>
-
-            <p>The current issue that we have now is that we need client feadback to better improve our prototypes.</p>
-
-          </div>
-
-            <div class="tab-pane fade" id="day6" role="tabpanel">
-            <h5>29/07/2025</h5>
-            <p>Today we received the feedback for our first pitch video, it was mostly positive, however the issue came with the understanding of the problem statement and also the project requirements, where we did not show enough regarding the forecasting and prediction of river kelvin. As such we decided to include them into our high fidelity prototype, making it more obvious for users to use and predict future conditions. </p>
-            <p>We also have started the inital draft of our poster, which is currently a work in progress, where we plan to focus more on selling the product than explaining what it does.</p>
-            <img src="images/Poster(initial).jpg" alt="poster(Initial)" width="800"/>
-          </div>
-
-            <div class="tab-pane fade" id="day7" role="tabpanel">
-            <h5>30/07/2025</h5>
-            <p>we continue redesigning the app, mainly changing how the forecasting works. After doing some internal test run, we found out that the readability of the forecast was not that good, as such we tested different version and settle for one that just overrides the entire page to the forecast frame.</p>
-            <p>Our group have come to the understanding that no matter what there is still rooms for improvement and also that we should keep refining the prototype until it is more usable and when we are satisfied with it.</p>
-            <p>We were also able to create a second draft of the poster and also created a logo for our mobile application.</p>
-            <img src="images/Poster(Second).jpg" alt="poster(Second)" width="800"/>
-            <img src="images/Logo.jpg" alt="Logo" width="800"/>
-          
-          </div>
-
-            <div class="tab-pane fade" id="day8" role="tabpanel">
-            <h5>31/07/2025</h5>
-            <p>Today, we conducted our second and possibly last partner meeting. The main focus for this meeting was to showcase our chosen high-fidelity prototype and gather final feedback from our partners.</p>
-
-            <p>Talk about what feedback was given</p><ul>
-              <li>Feedback 1</li>
-              <li>Feedback 2</li>
-              <li>Feedback 3</li>
-            </ul>
-
-            <p>After class, we went again to River Kelvin to conduct usability testing, where we approached members of the public to test our prototypes and also gather their thoughts and feedbacks.</p>
-            
-            <p>Add Pictures here</p>
-
-            <p>Talk about what feedback was given</p><ul>
-              <li>Feedback 1</li>
-              <li>Feedback 2</li>
-              <li>Feedback 3</li>
-            </ul>  
-          </div>
-
-            <div class="tab-pane fade" id="day9" role="tabpanel">
-            <h5>01/08/2025</h5>
-            <p>Summary</p>
-            </div>
-
-            <div class="tab-pane fade" id="day10" role="tabpanel">
-            <h5>04/08/2025</h5>
-            <p>Summary</p>
-            </div>
-
-            <div class="tab-pane fade" id="day11" role="tabpanel">
-            <h5>05/08/2025</h5>
-            <p>Summary</p>
-            </div>
-
-            <div class="tab-pane fade" id="day12" role="tabpanel">
-            <h5>06/08/2025</h5>
-            <p>Summary</p>
-            </div>
-
-            <div class="tab-pane fade" id="day13" role="tabpanel">
-            <h5>07/08/2025</h5>
-            <p>Summary</p>
-            </div>
-
-            <div class="tab-pane fade" id="day14" role="tabpanel">
-            <h5>08/08/2025</h5>
-            <p>Summary</p>
-            </div>
         </div>
+      </div>
     </div>
   </div>
-</section>
-
-
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
