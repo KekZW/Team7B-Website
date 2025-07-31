@@ -15,50 +15,58 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container">
-      <a class="navbar-brand text-white" href="index.html">
-        <i class="bi bi-water me-2"></i>River Kelvin Watch
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="index.html">
-              <i class="bi bi-house-door me-1"></i>Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="week1.html">
-              <i class="bi bi-calendar-week me-1"></i>Week 1
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="week2.html">
-              <i class="bi bi-calendar-week me-1"></i>Week 2
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="reflection.html">
-              <i class="bi bi-journal-text me-1"></i>Reflection
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="daily.html">
-              <i class="bi bi-calendar-day me-1"></i>Daily
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="product.html">
-              <i class="bi bi-box-seam me-1"></i>Product
-            </a>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <a class="navbar-brand text-white" href="index.html">
+      <i class="bi bi-water me-2"></i>River Kelvin Watch
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">
+            <i class="bi bi-house-door me-1"></i>Home
+          </a>
+        </li>
+
+        <!-- Weekly Summary Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="weeklyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-calendar-week me-1"></i>Weekly Summary
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="weeklyDropdown">
+            <li><a class="dropdown-item" href="week1.html">Week 1</a></li>
+            <li><a class="dropdown-item" href="week2.html">Week 2</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="reflection.html">
+            <i class="bi bi-journal-text me-1"></i>Reflection
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="daily.html">
+            <i class="bi bi-calendar-day me-1"></i>Daily
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="product.html">
+            <i class="bi bi-box-seam me-1"></i>Product + Design Process
+          </a>
+        </li>
+        
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Daily Reflection Section -->
   <div class="daily-reflection-container">
@@ -235,24 +243,36 @@
                   <h5 class="day-title">31/07/2025</h5>
                   <p class="content-paragraph">Today, we conducted our second and possibly last partner meeting. The main focus for this meeting was to showcase our chosen high-fidelity prototype and gather final feedback from our partners.</p>
 
-                  <p class="content-paragraph">Talk about what feedback was given</p>
+                  <p class="content-paragraph">We were given a few feedbacks on what we should look out for:</p>
                   <ul class="content-list">
-                    <li>Feedback 1</li>
-                    <li>Feedback 2</li>
-                    <li>Feedback 3</li>
+                    <li>We need to think about ways to reach out to people, ask why would they use this app?</li>
+                    <li>It would be nice if there are QR codes to link to both our Instagram and website.</li>
+                    <li>We should consider adding a news section to keep users updated.</li>
                   </ul>
 
-                  <p class="content-paragraph">After class, we went again to River Kelvin to conduct usability testing, where we approached members of the public to test our prototypes and also gather their thoughts and feedbacks.</p>
+                  <p>We also talk quite a bit about the current ways they have looking at pollution and how it should be integrates with the app.</p>
+
+                  <img src="images/PartnerMeet1.jpg" alt="Partner Meeting" class="content-image" width="800"/>
+                  <img src="images/PartnerMeet2.jpg" alt="Partner Meeting" class="content-image" width="800"/>
+                  <img src="images/PartnerMeet3.jpg" alt="Partner Meeting" class="content-image" width="800"/>
+
+
+
+                  <p class="content-paragraph">After the meeting, we asked some of our classmate to try testing the app to gather further feedback</p>
                   
                   <p class="content-paragraph">Add Pictures here</p>
 
-                  <p class="content-paragraph">Talk about what feedback was given</p>
                   <ul class="content-list">
-                    <li>Feedback 1</li>
-                    <li>Feedback 2</li>
-                    <li>Feedback 3</li>
+                    <li>The label are confusing, there should be a way for us to know what each of them means</li>
+                    <li>Some of the charts were clipping through</li>
+                    <li>Talking about the community tabs, there should be a way to click into it as there is no way for them to scan the QR as it is a mobile app</li>
                   </ul>
+
+                <img src="images/UsabilityTesting1.jpg" alt="Usability Testing 1" class="content-image" width="800"/>
+                <img src="images/UsabilityTesting2.jpg" alt="Usability Testing 2" class="content-image" width="800"/>
                 </div>
+
+
 
                 <div class="tab-pane fade" id="day9" role="tabpanel">
                   <h5 class="day-title">01/08/2025</h5>
