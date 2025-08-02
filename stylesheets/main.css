@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: #EAF5F2;
     min-height: 100vh;
     overflow-x: hidden; /* Prevent horizontal scroll on body */
 }
@@ -33,7 +33,7 @@ html {
 }
 
 .section-title {
-    color: #2c3e50;
+    color: #008B8Bff;
     font-weight: 600;
     margin-bottom: 2rem;
 }
@@ -48,7 +48,7 @@ html {
     font-size: 1.5rem;
 } */
 .custom-navbar {
-    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    background: #008B8Bff;
     padding: 1rem 1.5rem;
   }
   
@@ -59,8 +59,8 @@ html {
   }
   
   .navbar-nav .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: #ffd60a !important;
+    background-color: #FFD5B2;
+    color: #008B8Bff !important;
   }
   
   .navbar-toggler {
@@ -79,7 +79,7 @@ html {
   
   /* Dropdown Item Text */
   .dropdown-menu .dropdown-item {
-    color: #0077b6; /* Deep water blue */
+    color: #008B8Bff; /* Deep water blue */
     font-weight: 500;
     border-radius: 6px;
     transition: background-color 0.3s ease;
@@ -87,8 +87,8 @@ html {
   
   /* Hover Effect */
   .dropdown-menu .dropdown-item:hover {
-    background-color: #b2ebf2; /* Light hover shade */
-    color: #023e8a; /* Darker blue text on hover */
+    background-color: #FFD5B2; /* Light hover shade */
+    color: #008B8Bff; /* Darker blue text on hover */
   }
   
 
@@ -97,7 +97,7 @@ html {
 }
 
 .icon-wrapper {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #667C4Cff;
     color: white;
     width: 80px;
     height: 80px;
