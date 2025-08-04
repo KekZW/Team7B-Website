@@ -380,5 +380,34 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function showTabFromHash() {
+      const hash = window.location.hash;
+      if (hash) {
+        const triggerTab = document.querySelector(`button[data-bs-target="${hash}"]`);
+        if (triggerTab) {
+          const tab = new bootstrap.Tab(triggerTab);
+          tab.show();
+        }
+      }
+    }
+  
+    // Run when page first loads
+    document.addEventListener("DOMContentLoaded", function () {
+      showTabFromHash();
+  
+      // Update URL when a tab is shown
+      const tabButtons = document.querySelectorAll('button[data-bs-toggle="pill"]');
+      tabButtons.forEach((btn) => {
+        btn.addEventListener("shown.bs.tab", function () {
+          history.replaceState(null, null, btn.getAttribute("data-bs-target"));
+        });
+      });
+    });
+  
+    // Run when hash changes (e.g., someone clicks a link to #day9)
+    window.addEventListener("hashchange", showTabFromHash);
+  </script>
 </body>
 </html>
