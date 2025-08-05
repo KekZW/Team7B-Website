@@ -170,6 +170,21 @@
   content: '✔️ ';
 }
 
+.styled-x {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.styled-x li {
+  padding-left: 1rem;
+  text-indent: -0.75rem;
+}
+
+.styled-x li::before {
+  content: '❌ ';
+}
+
 .content-box {
   background-color: var(--backcol); /* optional */
   border: 1px solid #dee2e6;
