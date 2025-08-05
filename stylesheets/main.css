@@ -10,9 +10,11 @@ html {
 }
 
 .card {
-  border-radius: 12px !important;
-  border: 1px solid transparent !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* optional soft shadow */
+    border-radius: 12px !important;
+    border: 1px solid transparent !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* optional soft shadow */
+    position: relative;
+    overflow: hidden;   
 }
 
 .hero-section {
@@ -103,7 +105,7 @@ html {
 }
 
 .icon-wrapper {
-    background: #667C4Cff;
+    background: #008B8Bff;
     color: white;
     width: 80px;
     height: 80px;
@@ -175,4 +177,13 @@ html {
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.5);
+}
+
+.checkmark-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #008B8B;
+    z-index: 10;
 }

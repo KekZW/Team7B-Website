@@ -170,6 +170,21 @@
   content: '✔️ ';
 }
 
+.styled-q {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.styled-q li {
+  padding-left: 1rem;
+  text-indent: -0.75rem;
+}
+
+.styled-q li::before {
+  content: '❓ ';
+}
+
 .styled-x {
   list-style: none;
   padding: 0;
