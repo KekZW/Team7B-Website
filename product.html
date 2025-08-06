@@ -219,7 +219,7 @@
           <!-- Images with spacing -->
           <div class="row my-4">
             <div class="text-center">
-              <img src="images/StoryBoard.png" alt="Storyboard" class="img-fluid rounded">
+              <img src="images/StoryBoard.png" alt="Storyboard" class="img-fluid rounded" style="max-width: 90%;">
             </div>
           </div>
         </div>
@@ -263,75 +263,94 @@
             To evaluate the feasibility of our idea, we explored potential data sources and investigated how to extract relevant information from them.
           </p>
 
-          <p class="card-text">
-            <strong>Water Data (SEPA)</strong><br>
-            We found that the Scottish Environment Protection Agency (SEPA) provides various water-related datasets, accessible through their API. Examples include:
-          </p>
-
-          <ul class="card-text">
-            <li>
-              <strong>Water Level (Dryfield)</strong><br>
-              <a href="https://timeseries.sepa.org.uk/KiWIS/KiWIS?service=kisters&request=getTimeseriesValues&datasource=0&ts_path=1/133080/SG/15m.Cmd&from=2020-05-23&to=2025-07-23&returnfields=Timestamp,Value,Quality%20Code" target="_blank">
-                View API Endpoint
-              </a>
-            </li>
-            <li>
-              <strong>Water Flow (Bridgend)</strong><br>
-              <a href="https://timeseries.sepa.org.uk/KiWIS/KiWIS?service=kisters&request=getTimeseriesValues&datasource=0&ts_path=1/133099/Q/15m.Cmd&from=2024-05-23&to=2025-07-23&returnfields=Timestamp,Value,Quality%20Code" target="_blank">
-                View API Endpoint
-              </a>
-            </li>
-            <li>
-              <strong>Water Level & Quality (Killermont)</strong><br>
-              <a href="https://timeseries.sepa.org.uk/KiWIS/KiWIS?service=kisters&type=queryServices&datasource=0&request=getTimeseriesValues&ts_id=52752010&from=2025-07-01T09:00:00&period=P15D&returnfields=Timestamp,%20Value,%20Quality%20Code" target="_blank">
-                View API Endpoint
-              </a>
-            </li>
-            <li>
-              <strong>Rainfall Levels</strong><br>
-              <a href="https://www2.sepa.org.uk/rainfall/api/Hourly/341380?all=true" target="_blank">
-                View API Endpoint
-              </a>
-            </li>
-          </ul>
-
-          <p class="card-text">
-            <strong>Pollution Data</strong><br>
-            SEPA also provides pollution data; however, it is not available via API. Instead, it must be manually downloaded from their 
-            <a href="https://informatics.sepa.org.uk/WaterClassificationHub/" target="_blank">Water Classification Hub</a>.
-            Users can search for a river, select it, and download the CSV data.
-          </p>
-
-          <div class="text-center my-3">
-            <img src="images/WaterPollution.png" class="img-fluid rounded shadow-sm" alt="SEPA Pollution Data">
+          <div class="row mb-3">
+            <div class="col-md-12 d-flex align-items-stretch">
+              <div class="content-box p-3 w-100" style="--sidecol: #008B8B; --backcol: #D0F0F0;">
+                <h5 style="font-weight: bolder; color: #008B8B;">Water Data</h5>
+                <p style="color: #008B8B;">             
+                  We found that the Scottish Environment Protection Agency (SEPA) provides various water-related datasets, accessible through their API. Examples include: 
+                </p>
+                <ul>
+                  <li style="color: #008B8B;">
+                    <strong>Water Level (Dryfield)</strong>
+                    <a href="https://timeseries.sepa.org.uk/KiWIS/KiWIS?service=kisters&request=getTimeseriesValues&datasource=0&ts_path=1/133080/SG/15m.Cmd&from=2020-05-23&to=2025-07-23&returnfields=Timestamp,Value,Quality%20Code" target="_blank">
+                      View API Endpoint
+                    </a>
+                  </li>
+                  <li style="color: #008B8B;">
+                    <strong>Water Flow (Bridgend)</strong>
+                    <a href="https://timeseries.sepa.org.uk/KiWIS/KiWIS?service=kisters&request=getTimeseriesValues&datasource=0&ts_path=1/133099/Q/15m.Cmd&from=2024-05-23&to=2025-07-23&returnfields=Timestamp,Value,Quality%20Code" target="_blank">
+                      View API Endpoint
+                    </a>
+                  </li>
+                  <li style="color: #008B8B;">
+                    <strong>Water Level & Quality (Killermont)</strong>
+                    <a href="https://timeseries.sepa.org.uk/KiWIS/KiWIS?service=kisters&type=queryServices&datasource=0&request=getTimeseriesValues&ts_id=52752010&from=2025-07-01T09:00:00&period=P15D&returnfields=Timestamp,%20Value,%20Quality%20Code" target="_blank">
+                      View API Endpoint
+                    </a>
+                  </li>
+                  <li style="color: #008B8B;">
+                    <strong>Rainfall Levels</strong>
+                    <a href="https://www2.sepa.org.uk/rainfall/api/Hourly/341380?all=true" target="_blank">
+                      View API Endpoint
+                    </a>
+                  </li>
+                </ul>
+                <p></p>
+              </div>
+            </div>
           </div>
 
-          <p class="card-text">
-            <strong>Weather Data</strong><br>
-            Several APIs are available for obtaining weather information:
-          </p>
-
-          <ul class="card-text">
-            <li>
-              <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a><br>
-              Offers a free tier, but with limited API calls and some features locked behind paid plans. One limitation is the inability to select specific locations like the River Kelvin — only broader locations such as Glasgow are available.
-              <div class="text-center my-3">
-                <img src="images/weatherapi.png" class="img-fluid rounded shadow-sm" alt="WeatherAPI Pricing">
+          <div class="row mb-3">
+            <div class="col-md-12 d-flex align-items-stretch">
+              <div class="content-box p-3 w-100" style="--sidecol: #2B8682; --backcol: #D0F0DE;">
+                <h5 style="color: #2B8682; font-weight: bolder;">Pollution Data</h5>
+                <p style="color: #2B8682;">
+                  SEPA also provides pollution data; however, it is not available via API. Instead, it must be manually downloaded from their 
+                  <a href="https://informatics.sepa.org.uk/WaterClassificationHub/" target="_blank">Water Classification Hub</a>.
+                  Users can search for a river, select it, and download the CSV data.
+                </p>
+                <div class="row my-4">
+                  <div class="text-center">
+                    <img src="images/WaterPollution.png" alt="SEPA Pollution Data" class="img-fluid rounded" style="max-width: 80%;">
+                  </div>
+                </div>
               </div>
-            </li>
-            <li>
-              <a href="https://openweathermap.org/api" target="_blank">OpenWeather API</a><br>
-              Offers a free tier with limited API calls, but cannot be used for commercial purposes.
-              <div class="text-center my-3">
-                <img src="images/openweathermap.png" class="img-fluid rounded shadow-sm" alt="OpenWeather Pricing">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-12 d-flex align-items-stretch">
+              <div class="content-box p-3 w-100" style="--sidecol: #E96E50; --backcol: #FCE5D8;">
+                <h5 style="color: #E96E50; font-weight: bolder;">Weather Data</h5>
+                <p style="color: #E96E50;">
+                  Several APIs are available for obtaining weather information: 
+                  <a href="https://informatics.sepa.org.uk/WaterClassificationHub/" target="_blank">Water Classification Hub</a>.
+                  Users can search for a river, select it, and download the CSV data.
+                </p>
+                <ul class="card-text">
+                  <li style="color: #E96E50;">
+                    <a href="https://www.weatherapi.com/" target="_blank"><strong>WeatherAPI</strong></a><br>
+                    Offers a free tier, but with limited API calls and some features locked behind paid plans. One limitation is the inability to select specific locations like the River Kelvin — only broader locations such as Glasgow are available.
+                    <div class="row my-4">
+                      <div class="text-center">
+                        <img src="images/weatherapi.png" alt="SEPA Pollution Data" class="img-fluid rounded" style="max-width: 80%;">
+                      </div>
+                    </div>
+                  </li>
+                  <li style="color: #E96E50;">
+                    <a href="https://openweathermap.org/api" target="_blank"><strong>OpenWeather API</strong></a><br>
+                    Offers a free tier with limited API calls, but cannot be used for commercial purposes.
+                    <div class="row my-4">
+                      <div class="text-center">
+                        <img src="images/openweathermap.png" alt="SEPA Pollution Data" class="img-fluid rounded" style="max-width: 80%;">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
-            </li>
-          </ul>
-
-
-          
-
-
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -411,7 +430,7 @@
               <div class="col-md-12 d-flex align-items-stretch">
                 <div class="content-box p-3 w-100" style="--sidecol: #2B8682; --backcol: #D0F0DE;">
                   <h5 style="color: #2B8682; font-weight: bolder;">Main Insights</h5>
-                  <p style="color: #2B8682;">From our second partner meetin, we took away the following insights:</p>
+                  <p style="color: #2B8682;">From our second partner meeting, we took away the following insights:</p>
                   <ul class="styled">
                     <li style="color: #2B8682;"><strong>Login System</strong> - We force users to create an account to use the app, which would allow us to gather more data and also allow users to save their preferences. </li>
                     <li style="color: #2B8682;"><strong>Guest System</strong> - We allow users to use the app without creating an account, which would allow for a more seamless experience but would limit our ability to gather data and save preferences. 
@@ -448,16 +467,30 @@
           <p class="card-text">
             During this stage, we had a few ideas and also concerns regarding the login system. We considered two different approaches:
           </p>
-          <ul class="list-group mb-4">
-            <li class="list-group-item">
-              <strong>Login System:</strong> Require users to create an account to use the app. This would allow us to gather more data and enable users to save their preferences.
-            </li>
-            <li class="list-group-item">
-              <strong>Guest System:</strong> Allow users to use the app without creating an account. This would create a more seamless experience but would limit our ability to gather data and save preferences.
-            </li>
-          </ul>
-          <div class="text-center">
-            <img src="images/IntegrativeThinking.png" alt="Integrative Thinking" class="img-fluid rounded shadow" style="max-width: 1000px;">
+
+          <div class="row my-4 d-flex">
+            <div class="col-md-6 mb-3">
+              <div class="content-box p-3 w-100 h-100" style="--sidecol: #2B8682;">
+                <p style="color: #2B8682;"><strong>Login System:</strong></p>
+                <p>
+                  Require users to create an account to use the app. This would allow us to gather more data and enable users to save their preferences.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="content-box p-3 w-100 h-100" style="--sidecol: #2B8682;">
+                <p style="color: #2B8682;"><strong>Guest System:</strong></p>
+                <p>
+                  Allow users to use the app without creating an account. This would create a more seamless experience but would limit our ability to gather data and save preferences.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row my-4">
+            <div class="text-center">
+              <img src="images/IntegrativeThinking.png" alt="SEPA Pollution Data" class="img-fluid rounded" style="max-width: 80%;">
+            </div>
           </div>
         </div>
       </div>
@@ -469,29 +502,60 @@
           <div class="card-body">
             <!-- <h5 class="card-title"><i class="bi bi-palette me-2"></i>First High Fidelity Design</h5> -->
             <h2 class="section-title text-center">Usability Testing</h2>
+            <h5 style="font-weight: bolder;">Overview</h5>
             <p class="card-text">
-              We conducted usability testing with a group of users to gather feedback on the first high-fidelity design. 
-              The feedback highlighted areas for improvement, such as:
-              <ul>
+              At this stage, we refined our design with internal testing.
+              We compared different options, like when to require login (at launch or only for reporting), and how to display pollutants (table vs. icons).
+              These tests helped us understand user preferences and usability better.
+              We also conducted internal reviews, where the team voted on the final layout. This collaborative approach ensured that the chosen design reflected both user input and team consensus.
+
+              <!-- <ul>
                 <li>A help option would be nice to help user understand what is going on</li>
                 <span class="text-success">We added a help button at the top right of the screen for users to access more information.</span>
                 <li>Have more news about what is going on (Friends of the River Kelvin)</li>
                 <span class="text-success">We added a scrollable section in the home page that has the latest updates.</span>
                 <li>Change the QR code, as there is no way for users to scan it</li>
                 <span class="text-success">In the actual app, we will make it so that the QR code will be clickable and link to their respective sites</span>
-              </ul>
+              </ul> -->
             </p>
-          </div>
-          <div class="clickable-gallery-wrapper">
-            <div class="image-gallery">
-                <button class="gallery-btn prev-btn"><</button>
-                <img src="images/UsabilityTesting1.jpg" alt="River Kelvin" class="content-image gallery-display-image">
-                <button class="gallery-btn next-btn">></button>
+
+            <div class="clickable-gallery-wrapper">
+              <div class="image-gallery">
+                  <button class="gallery-btn prev-btn"><</button>
+                  <img src="images/UsabilityTesting1.jpg" alt="River Kelvin" class="content-image gallery-display-image">
+                  <button class="gallery-btn next-btn">></button>
+              </div>
+              <div class="gallery-dots"></div>
+              <div class="gallery-sources" style="display: none;">
+                <img src="images/UsabilityTesting1.jpg" alt="Usability Testing 1"/>
+                <img src="images/UsabilityTesting2.jpg" alt="Usability Testing 2"/>
+              </div>
             </div>
-            <div class="gallery-dots"></div>
-            <div class="gallery-sources" style="display: none;">
-              <img src="images/UsabilityTesting1.jpg" alt="Usability Testing 1"/>
-              <img src="images/UsabilityTesting2.jpg" alt="Usability Testing 2"/>
+
+            <h5 style="font-weight: bolder;">Feedback</h5>
+            
+            <div class="container mt-4">
+              <div class="row mb-3">
+                <div class="col-md-6 d-flex align-items-stretch" style="--sidecol: #E96E50; --backcol: #FCE5D8;">
+                  <div class="content-box p-3 w-100">
+                    <h5 style="color: #E96E50; font-weight: 600;"><u>Issues</u></h5>
+                    <ul class="styled-x">
+                      <li style="color: #E96E50;">A help option would be nice to help user understand what is going on</li>
+                      <li style="color: #E96E50;">Have more news about what is going on (Friends of the River Kelvin)</li>
+                      <li style="color: #E96E50;">Change the QR code, as there is no way for users to scan it</li>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch" style="--sidecol: #008B8B; --backcol: #D0F0F0;">
+                  <div class="content-box p-3 w-100">
+                    <h5 style="color: #008B8B; font-weight: 600;"><u>Solutions</u></h5>
+                    <ul class="styled">
+                      <li style="color: #008B8B;">Add a help button at the top right of the screen for users to access more information.</li>
+                      <li style="color: #008B8B;">Add a scrollable section in the home page that has the latest updates</li>
+                      <li style="color: #008B8B;">In the actual app, allow the QR code will be clickable and link to their respective sites</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -508,9 +572,11 @@
             <p class="card-text">
               Based on feedback, the final design included enhanced accessibility, clearer icons and real-time river data integration.
             </p>
-            <div class="row">
-            <img src="images/Hi-Fi(Ver3).png" class="img-fluid rounded shadow-sm" alt="Hi-Fi Wireframe A">    
-          </div>
+            <div class="row my-4">
+              <div class="text-center">
+                <img src="images/Hi-Fi(Ver3).png" alt="SEPA Pollution Data" class="img-fluid rounded" style="max-width: 80%;">
+              </div>
+            </div>
           </div>
         </div>
       </div>
