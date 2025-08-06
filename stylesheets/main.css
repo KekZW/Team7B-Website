@@ -1,4 +1,5 @@
 body {
+    padding-top: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #EAF5F2;
     min-height: 100vh;
@@ -58,7 +59,7 @@ html {
 .custom-navbar {
     background: #008B8Bff;
     padding: 1rem 1.5rem;
-  }
+}
   
   .navbar-nav .nav-link {
     font-weight: 500;

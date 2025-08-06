@@ -17,7 +17,7 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg custom-navbar">
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container">
       <a class="navbar-brand text-white" href="index.html">
         <i class="bi bi-water me-2"></i>River Kelvin Watch
@@ -35,20 +35,28 @@
             </a>
           </li>
 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link text-white" href="product.html">
-              Product + Design Process
+              Design Process
             </a>
-          </li>
+          </li> -->
 
           <!-- Weekly Summary Dropdown -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="weeklyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Weeklies
+            <a class="nav-link dropdown-toggle text-white" href="product.html" id="weeklyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Design Process
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="weeklyDropdown">
-              <li><a class="dropdown-item" href="week1.html">Week 1</a></li>
-              <li><a class="dropdown-item" href="week2.html">Week 2</a></li>
+              <li><a class="dropdown-item" href="product.html">(Main Page)</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#understandproblem">Understand the Problem</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#brainstorming">Brainstorming Ideas</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#storyboard">Storyboarding</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#prototyperesearch">Initial Prototyping and Research</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#refinement">Prototype refinement and Feedback</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#integrative">Integrative Thinking</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#usabilitytest">Usability Testing</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#hifiprototype">Final High Fidelity Design</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#product">Product + Features</a></li>
             </ul>
           </li>
 
@@ -63,271 +71,271 @@
     </div>
   </nav>
   
-<section class="hero-fullwidth">
-  <div class="hero-card">
-    <img src="images/homepage.png" alt="River Kelvin" class="hero-bg" />
-    <div class="hero-content">
-      <div class="hero-text first wrapper-title">
-        <h1>
-          <span>The</span>
-          <span>Background</span>
-        </h1>
-        <h1>
-          <span>The</span>
-          <span>Background</span>
-        </h1>
-        <p class="lead">Hover to reveal</p>
-      </div>
-      
-      <div class="hero-text second">
-        <p class="lead">
-          The River Kelvin is a vital part of Glasgow's ecosystem, providing recreational opportunities and supporting local wildlife. Organizations such as Friends of the River Kelvin (FORK) work as a charity to care for the river and its surroundings. Over the years, FORK has organized monthly clean-ups, citizen science projects, music and arts events, community festivals, tree planting, river monitoring, and awareness campaigns.
-        </p>
-        <p class="lead">
-          However, understanding the river’s conditions can be challenging due to complex and limited data sources.  
-          Our project aims to bridge this gap by providing accessible, real-time information about the river’s conditions, helping the community engage safely and responsibly with this natural resource.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Problem Statement Section -->
-<section id="problem-statement" class="content-section ocean">
-  <div class="container">
-    <div class="row">
-
-      <div class="bubbles">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <div class="col-lg-12 mx-auto">
-        <div id="problem-statement" class="card feature-card">
-          <div class="card-body text-center p-5">
-           
-            <h2 class="section-title">Problem Statement</h2>
-            <p class="lead">
-              When conducting activities by the river, the condition of the river greatly impacts safety aspects. 
-              The Scottish Environment Protection Agency (SEPA) does publish data around river flow, but it is difficult to decipher—especially when it comes to predicting river conditions ahead of time.
-              Another aspect is that the river flow rate upstream affects pollution levels downstream, but again, this is difficult to derive from the available data.
-            </p>
-
-            <!-- Key Points -->
-            <div class="mt-5">
-              <h5 class="text-center mb-4">Key Points</h5>
-              <div class="row justify-content-center g-4">
-                <div class="col-md-6 col-lg-5">
-                  <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
-                    <div class="mb-3">
-                      <i class="bi bi-bar-chart-line" style="font-size: 2rem;"></i>
-                    </div>
-                    <p class="mb-0">River condition data can be difficult to understand, especially for non-technical users.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-lg-5">
-                  <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
-                    <div class="mb-3">
-                      <i class="bi bi-clock-history" style="font-size: 2rem;"></i>
-                    </div>
-                    <p class="mb-0">There is a lack of accessible tools to help predict future river conditions based on current and upstream data.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
+  <section class="hero-fullwidth">
+    <div class="hero-card">
+      <img src="images/homepage.png" alt="River Kelvin" class="hero-bg" />
+      <div class="hero-content">
+        <div class="hero-text first wrapper-title">
+          <h1>
+            <span>The</span>
+            <span>Background</span>
+          </h1>
+          <h1>
+            <span>The</span>
+            <span>Background</span>
+          </h1>
+          <p class="lead">Hover to reveal</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Feature Boxes Section -->
-<section id="app-features" class="py-5 bg-light">
-  <div class="container">
-    <div class="mb-4">
-      <h2 class="text-center">Our Proposed Solution: River Kelvin Watch</h2>
-    </div>
-    <p class="lead text-center mb-5">
-      Our app provides near real-time data to support safe and enjoyable engagement with the River Kelvin. Key features include:
-    </p>
-
-    <div class="row g-4 justify-content-center">
-      <div class="col-md-6 col-lg-4">
-        <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
-          <div class="mb-3" style="font-size: 2rem;">💧</div>
-          <h5 class="mb-2">Water Monitoring</h5>
-          <p class="mb-0">Tracks water levels and river flow rates.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
-          <div class="mb-3" style="font-size: 2rem;">📈</div>
-          <h5 class="mb-2">Predictions</h5>
-          <p class="mb-0">Based on historical data and weather, predicts future river conditions.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
-          <div class="mb-3" style="font-size: 2rem;">🚱</div>
-          <h5 class="mb-2">Pollution Data</h5>
-          <p class="mb-0">Access recorded pollutant levels by the Scottish Water Agency.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
-          <div class="mb-3" style="font-size: 2rem;">🚣‍♂️</div>
-          <h5 class="mb-2">Activity Suggestions</h5>
-          <p class="mb-0">Based on current river conditions at each stations.</p>
-        </div>
-      </div>
-  
-      <div class="col-md-6 col-lg-4">
-        <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
-          <div class="mb-3" style="font-size: 2rem;">📅</div>
-          <h5 class="mb-2">FORK Events</h5>
-          <p class="mb-0">Lists events from Friends of River Kelvin.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Demo Section -->
-<section id="demo-section" class="py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <div class="demo-content">
-          <h2 class="section-title mb-4 text-white">See River Kelvin Watch in Action</h2>
-          <p class="lead mb-4 text-white-75">
-            Experience our intuitive interface designed to make river monitoring accessible to everyone. 
-            Our interactive prototype demonstrates real-time data visualization and activity recommendations.
+        
+        <div class="hero-text second">
+          <p class="lead">
+            The River Kelvin is a vital part of Glasgow's ecosystem, providing recreational opportunities and supporting local wildlife. Organizations such as Friends of the River Kelvin (FORK) work as a charity to care for the river and its surroundings. Over the years, FORK has organized monthly clean-ups, citizen science projects, music and arts events, community festivals, tree planting, river monitoring, and awareness campaigns.
           </p>
-          
-          <div class="demo-features mb-4">
-            <div class="feature-item d-flex align-items-center mb-3">
-              <div class="feature-icon me-3">
-                <i class="bi bi-phone" style="font-size: 1.5rem;"></i>
-              </div>
-              <div>
-                <h6 class="mb-1">Mobile-First Design</h6>
-                <small class="text-muted">Optimized for on-the-go river monitoring</small>
-              </div>
-            </div>
-            
-            <div class="feature-item d-flex align-items-center mb-3">
-              <div class="feature-icon me-3">
-                <i class="bi bi-speedometer2" style="font-size: 1.5rem;"></i>
-              </div>
-              <div>
-                <h6 class="mb-1">Real-Time Updates</h6>
-                <small class="text-muted">Live data from SEPA monitoring stations</small>
-              </div>
-            </div>
-            
-            <div class="feature-item d-flex align-items-center mb-3">
-              <div class="feature-icon me-3">
-                <i class="bi bi-shield-check" style="font-size: 1.5rem;"></i>
-              </div>
-              <div>
-                <h6 class="mb-1">Safety Alerts</h6>
-                <small class="text-muted">Warning for unsafe conditions</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="demo-buttons">
-            <a href="https://www.figma.com/proto/cP9772Al9RxzUw6SiH1aOy/OIP-WireFrame?page-id=0%3A1&node-id=51-740&viewport=1465%2C1064%2C0.45&t=eFmZtdutYslGDWrH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=51%3A740&show-proto-sidebar=1"
-              target="_blank" rel="noopener noreferrer"
-              class="btn btn-light btn-lg me-3 mb-2">
-              <i class="bi bi-play-circle me-2"></i>Try Interactive Demo
-            </a>
-          </div>
+          <p class="lead">
+            However, understanding the river’s conditions can be challenging due to complex and limited data sources.  
+            Our project aims to bridge this gap by providing accessible, real-time information about the river’s conditions, helping the community engage safely and responsibly with this natural resource.
+          </p>
         </div>
+
       </div>
-      
-      <div class="col-lg-6">
-        <div class="demo-preview">
-          <div class="phone-mockup">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="demo-app">
-                  <!-- <div class="app-header">
-                    <div class="status-bar">
-                      <span class="time">9:41</span>
-                      <div class="status-icons">
-                        <i class="bi bi-wifi"></i>
-                        <i class="bi bi-battery-full"></i>
+    </div>
+  </section>
+
+  <!-- Problem Statement Section -->
+  <section id="problem-statement" class="content-section ocean">
+    <div class="container">
+      <div class="row">
+
+        <div class="bubbles">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="col-lg-12 mx-auto">
+          <div id="problem-statement" class="card feature-card">
+            <div class="card-body text-center p-5">
+            
+              <h2 class="section-title">Problem Statement</h2>
+              <p class="lead">
+                When conducting activities by the river, the condition of the river greatly impacts safety aspects. 
+                The Scottish Environment Protection Agency (SEPA) does publish data around river flow, but it is difficult to decipher—especially when it comes to predicting river conditions ahead of time.
+                Another aspect is that the river flow rate upstream affects pollution levels downstream, but again, this is difficult to derive from the available data.
+              </p>
+
+              <!-- Key Points -->
+              <div class="mt-5">
+                <h5 class="text-center mb-4">Key Points</h5>
+                <div class="row justify-content-center g-4">
+                  <div class="col-md-6 col-lg-5">
+                    <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+                      <div class="mb-3">
+                        <i class="bi bi-bar-chart-line" style="font-size: 2rem;"></i>
                       </div>
-                    </div>
-                    <div class="app-nav">
-                      <h3>River Kelvin Watch</h3>
-                      <i class="bi bi-water"></i>
+                      <p class="mb-0">River condition data can be difficult to understand, especially for non-technical users.</p>
                     </div>
                   </div>
-                  
-                  <div class="app-content">
-                    <div class="location-card">
-                      <h4>Kelvingrove Park</h4>
-                      <div class="condition-badge safe">Safe for Activities</div>
-                    </div>
-                    
-                    <div class="metrics-grid">
-                      <div class="metric">
-                        <div class="metric-value">1.2m</div>
-                        <div class="metric-label">Water Level</div>
+
+                  <div class="col-md-6 col-lg-5">
+                    <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+                      <div class="mb-3">
+                        <i class="bi bi-clock-history" style="font-size: 2rem;"></i>
                       </div>
-                      <div class="metric">
-                        <div class="metric-value">Clean</div>
-                        <div class="metric-label">Pollution Level</div>
-                      </div>
-                      <div class="metric">
-                        <div class="metric-value">Good</div>
-                        <div class="metric-label">Water Quality</div>
-                      </div>
-                    </div>
-                    
-                    <div class="activities">
-                      <h5>Recommended Activities</h5>
-                      <div class="activity-list">
-                        <div class="activity-item">🚣‍♂️ Kayaking</div>
-                        <div class="activity-item">🎣 Fishing</div>
-                        <div class="activity-item">🚶‍♀️ Walking</div>
-                      </div>
+                      <p class="mb-0">There is a lack of accessible tools to help predict future river conditions based on current and upstream data.</p>
                     </div>
                   </div>
                 </div>
-              </div> -->
-              <img src="images/hi-fi(l).png">
+              </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Feature Boxes Section -->
+  <section id="app-features" class="py-5 bg-light">
+    <div class="container">
+      <div class="mb-4">
+        <h2 class="text-center">Our Proposed Solution: River Kelvin Watch</h2>
+      </div>
+      <p class="lead text-center mb-5">
+        Our app provides near real-time data to support safe and enjoyable engagement with the River Kelvin. Key features include:
+      </p>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+            <div class="mb-3" style="font-size: 2rem;">💧</div>
+            <h5 class="mb-2">Water Monitoring</h5>
+            <p class="mb-0">Tracks water levels and river flow rates.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+            <div class="mb-3" style="font-size: 2rem;">📈</div>
+            <h5 class="mb-2">Predictions</h5>
+            <p class="mb-0">Based on historical data and weather, predicts future river conditions.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+            <div class="mb-3" style="font-size: 2rem;">🚱</div>
+            <h5 class="mb-2">Pollution Data</h5>
+            <p class="mb-0">Access recorded pollutant levels by the Scottish Water Agency.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+            <div class="mb-3" style="font-size: 2rem;">🚣‍♂️</div>
+            <h5 class="mb-2">Activity Suggestions</h5>
+            <p class="mb-0">Based on current river conditions at each stations.</p>
+          </div>
+        </div>
+    
+        <div class="col-md-6 col-lg-4">
+          <div class="border rounded shadow-sm p-4 text-center bg-white h-100">
+            <div class="mb-3" style="font-size: 2rem;">📅</div>
+            <h5 class="mb-2">FORK Events</h5>
+            <p class="mb-0">Lists events from Friends of River Kelvin.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section id="demo-section" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="demo-content">
+            <h2 class="section-title mb-4 text-white">See River Kelvin Watch in Action</h2>
+            <p class="lead mb-4 text-white-75">
+              Experience our intuitive interface designed to make river monitoring accessible to everyone. 
+              Our interactive prototype demonstrates real-time data visualization and activity recommendations.
+            </p>
+            
+            <div class="demo-features mb-4">
+              <div class="feature-item d-flex align-items-center mb-3">
+                <div class="feature-icon me-3">
+                  <i class="bi bi-phone" style="font-size: 1.5rem;"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1">Mobile-First Design</h6>
+                  <small class="text-muted">Optimized for on-the-go river monitoring</small>
+                </div>
+              </div>
+              
+              <div class="feature-item d-flex align-items-center mb-3">
+                <div class="feature-icon me-3">
+                  <i class="bi bi-speedometer2" style="font-size: 1.5rem;"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1">Real-Time Updates</h6>
+                  <small class="text-muted">Live data from SEPA monitoring stations</small>
+                </div>
+              </div>
+              
+              <div class="feature-item d-flex align-items-center mb-3">
+                <div class="feature-icon me-3">
+                  <i class="bi bi-shield-check" style="font-size: 1.5rem;"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1">Safety Alerts</h6>
+                  <small class="text-muted">Warning for unsafe conditions</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="demo-buttons">
+              <a href="https://www.figma.com/proto/cP9772Al9RxzUw6SiH1aOy/OIP-WireFrame?page-id=0%3A1&node-id=51-740&viewport=1465%2C1064%2C0.45&t=eFmZtdutYslGDWrH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=51%3A740&show-proto-sidebar=1"
+                target="_blank" rel="noopener noreferrer"
+                class="btn btn-light btn-lg me-3 mb-2">
+                <i class="bi bi-play-circle me-2"></i>Try Interactive Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="demo-preview">
+            <div class="phone-mockup">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="demo-app">
+                    <!-- <div class="app-header">
+                      <div class="status-bar">
+                        <span class="time">9:41</span>
+                        <div class="status-icons">
+                          <i class="bi bi-wifi"></i>
+                          <i class="bi bi-battery-full"></i>
+                        </div>
+                      </div>
+                      <div class="app-nav">
+                        <h3>River Kelvin Watch</h3>
+                        <i class="bi bi-water"></i>
+                      </div>
+                    </div>
+                    
+                    <div class="app-content">
+                      <div class="location-card">
+                        <h4>Kelvingrove Park</h4>
+                        <div class="condition-badge safe">Safe for Activities</div>
+                      </div>
+                      
+                      <div class="metrics-grid">
+                        <div class="metric">
+                          <div class="metric-value">1.2m</div>
+                          <div class="metric-label">Water Level</div>
+                        </div>
+                        <div class="metric">
+                          <div class="metric-value">Clean</div>
+                          <div class="metric-label">Pollution Level</div>
+                        </div>
+                        <div class="metric">
+                          <div class="metric-value">Good</div>
+                          <div class="metric-label">Water Quality</div>
+                        </div>
+                      </div>
+                      
+                      <div class="activities">
+                        <h5>Recommended Activities</h5>
+                        <div class="activity-list">
+                          <div class="activity-item">🚣‍♂️ Kayaking</div>
+                          <div class="activity-item">🎣 Fishing</div>
+                          <div class="activity-item">🚶‍♀️ Walking</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <img src="images/hi-fi(l).png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="container">

@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg custom-navbar">
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container">
       <a class="navbar-brand text-white" href="index.html">
         <i class="bi bi-water me-2"></i>River Kelvin Watch
@@ -31,20 +31,28 @@
             </a>
           </li>
 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link text-white" href="product.html">
               Design Process
             </a>
-          </li>
+          </li> -->
 
           <!-- Weekly Summary Dropdown -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="weeklyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Weeklies
+            <a class="nav-link dropdown-toggle text-white" href="product.html" id="weeklyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Design Process
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="weeklyDropdown">
-              <li><a class="dropdown-item" href="week1.html">Week 1</a></li>
-              <li><a class="dropdown-item" href="week2.html">Week 2</a></li>
+              <li><a class="dropdown-item" href="product.html">(Main Page)</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#understandproblem">Understand the Problem</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#brainstorming">Brainstorming Ideas</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#storyboard">Storyboarding</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#prototyperesearch">Initial Prototyping and Research</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#refinement">Prototype refinement and Feedback</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#integrative">Integrative Thinking</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#usabilitytest">Usability Testing</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#hifiprototype">Final High Fidelity Design</a></li>
+              <li class="ms-4"><a class="dropdown-item" href="product.html#product">Product + Features</a></li>
             </ul>
           </li>
 
@@ -63,7 +71,7 @@
     <h2 class="mb-5">Design Process & Product Overview</h2>
 
     <!-- Section: Understanding the Problem Statement -->
-    <div class="reflection-card">
+    <div class="reflection-card" id='understandproblem'>
       <div class="card mb-4 shadow-sm">
         <div class="card-body">
           <!-- <h4 class="card-title mb-3"><i class="bi bi-exclamation-circle me-2"></i>Understanding the Problem Statement</h4> -->
@@ -126,7 +134,7 @@
     </div>
 
     <!-- Card 2: Brainstorming -->
-    <div class="reflection-card">
+    <div class="reflection-card" id='brainstorming'>
       <div class="card mb-4 shadow-sm">
         <div class="card-body">
           <!-- <h4 class="card-title mb-3"><i class="bi bi-lightbulb me-2"></i>Brainstorming</h4> -->
@@ -197,7 +205,7 @@
     </div>
 
     <!-- Card 3: Storyboard -->
-    <div class="reflection-card">
+    <div class="reflection-card" id='storyboard'>
       <div class="card mb-4 shadow-sm">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -219,7 +227,7 @@
     </div>
 
     <!-- Card 4: Lo-Fi Design -->
-    <div class="reflection-card">
+    <div class="reflection-card" id='prototyperesearch'>
       <div class="card mb-4 shadow-sm">
         <div class="card-body">
           <h2 class="section-title text-center">Initial Prototyping and Research</h2>
@@ -329,7 +337,7 @@
     </div>
 
     <!-- Card 5: First Hi-Fi Design -->
-    <div class="reflection-card">
+    <div class="reflection-card" id='refinement'>
       <div class="card mb-4 shadow-sm">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -429,34 +437,33 @@
       </div>
     </div>
 
-      <div class="reflection-card">
-        <div class="card mb-4 shadow-sm">
-          <div class="card-body">
-            <h2 class="section-title text-center mb-4">Integrative Thinking</h2>
-            <p class="card-text">
-              Integrative thinking played a crucial role in our design process. By synthesizing diverse perspectives and ideas, we were able to create a more holistic solution.
-              This approach encouraged collaboration and open dialogue within the team, leading to innovative design outcomes.
-            </p>
-            <p class="card-text">
-              During this stage, we had a few ideas and also concerns regarding the login system. We considered two different approaches:
-            </p>
-            <ul class="list-group mb-4">
-              <li class="list-group-item">
-                <strong>Login System:</strong> Require users to create an account to use the app. This would allow us to gather more data and enable users to save their preferences.
-              </li>
-              <li class="list-group-item">
-                <strong>Guest System:</strong> Allow users to use the app without creating an account. This would create a more seamless experience but would limit our ability to gather data and save preferences.
-              </li>
-            </ul>
-            <div class="text-center">
-              <img src="images/IntegrativeThinking.png" alt="Integrative Thinking" class="img-fluid rounded shadow" style="max-width: 1000px;">
-            </div>
+    <div class="reflection-card" id='integrative'>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h2 class="section-title text-center mb-4">Integrative Thinking</h2>
+          <p class="card-text">
+            Integrative thinking played a crucial role in our design process. By synthesizing diverse perspectives and ideas, we were able to create a more holistic solution.
+            This approach encouraged collaboration and open dialogue within the team, leading to innovative design outcomes.
+          </p>
+          <p class="card-text">
+            During this stage, we had a few ideas and also concerns regarding the login system. We considered two different approaches:
+          </p>
+          <ul class="list-group mb-4">
+            <li class="list-group-item">
+              <strong>Login System:</strong> Require users to create an account to use the app. This would allow us to gather more data and enable users to save their preferences.
+            </li>
+            <li class="list-group-item">
+              <strong>Guest System:</strong> Allow users to use the app without creating an account. This would create a more seamless experience but would limit our ability to gather data and save preferences.
+            </li>
+          </ul>
+          <div class="text-center">
+            <img src="images/IntegrativeThinking.png" alt="Integrative Thinking" class="img-fluid rounded shadow" style="max-width: 1000px;">
           </div>
         </div>
       </div>
+    </div>
 
-
-    <div class="reflection-card">
+    <div class="reflection-card" id='usabilitytest'>
       <div class="card mb-4 shadow-sm">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -492,7 +499,7 @@
     </div>
 
     <!-- Card 6: Final Hi-Fi Design -->
-    <div class="reflection-card">
+    <div class="reflection-card" id='hifiprototype'>
       <div class="card mb-4 shadow-sm">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -510,35 +517,35 @@
     </div>
 
     <!-- Card 7: Product + Features -->
-<div class="reflection-card">
-  <div class="card mb-4 shadow-sm">
-    <div class="card h-100 shadow-sm">
-      <div class="card-body">
-        <h2 class="section-title text-center">Product + Features</h2>
-        <p class="card-text">
-          Our final product is a mobile app called <strong>River Kelvin Watch</strong>. It enables users to:
-        </p>
-        <ul>
-          <li>Check real-time river flow and water level</li>
-          <li>Check forecasted river flow and water level</li>
-          <li>Understand data through simplified charts and icons</li>
-          <li>View historical patterns for awareness and planning</li>
-          <li>Report river condition via intuitive user interface</li>
-        </ul>
+    <div class="reflection-card" id='product'>
+      <div class="card mb-4 shadow-sm">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h2 class="section-title text-center">Product + Features</h2>
+            <p class="card-text">
+              Our final product is a mobile app called <strong>River Kelvin Watch</strong>. It enables users to:
+            </p>
+            <ul>
+              <li>Check real-time river flow and water level</li>
+              <li>Check forecasted river flow and water level</li>
+              <li>Understand data through simplified charts and icons</li>
+              <li>View historical patterns for awareness and planning</li>
+              <li>Report river condition via intuitive user interface</li>
+            </ul>
 
-        <!-- Figma Embed -->
-        <div class="text-center mt-4">
-          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                width="1000"  height="1000"
-                src="https://embed.figma.com/proto/cP9772Al9RxzUw6SiH1aOy/OIP-WireFrame?page-id=0%3A1&node-id=51-740&p=f&viewport=1642%2C234%2C0.63&scaling=scale-down&content-scaling=fixed&starting-point-node-id=51%3A740&show-proto-sidebar=1&embed-host=share" 
-                allowfullscreen>
-          </iframe>
+            <!-- Figma Embed -->
+            <div class="text-center mt-4">
+              <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                    width="1000"  height="1000"
+                    src="https://embed.figma.com/proto/cP9772Al9RxzUw6SiH1aOy/OIP-WireFrame?page-id=0%3A1&node-id=51-740&p=f&viewport=1642%2C234%2C0.63&scaling=scale-down&content-scaling=fixed&starting-point-node-id=51%3A740&show-proto-sidebar=1&embed-host=share" 
+                    allowfullscreen>
+              </iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 
 
   <footer class="site-footer">
