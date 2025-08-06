@@ -249,10 +249,81 @@
             </div>
           </div>
 
-          <h5 style="font-weight: bolder;">Research</h5>
+         <h5 style="font-weight: bold;">Research</h5>
+
           <p class="card-text">
-           Talk about API research
+            To evaluate the feasibility of our idea, we explored potential data sources and investigated how to extract relevant information from them.
           </p>
+
+          <p class="card-text">
+            <strong>Water Data (SEPA)</strong><br>
+            We found that the Scottish Environment Protection Agency (SEPA) provides various water-related datasets, accessible through their API. Examples include:
+          </p>
+
+          <ul class="card-text">
+            <li>
+              <strong>Water Level (Dryfield)</strong><br>
+              <a href="https://timeseries.sepa.org.uk/KiWIS/KiWIS?service=kisters&request=getTimeseriesValues&datasource=0&ts_path=1/133080/SG/15m.Cmd&from=2020-05-23&to=2025-07-23&returnfields=Timestamp,Value,Quality%20Code" target="_blank">
+                View API Endpoint
+              </a>
+            </li>
+            <li>
+              <strong>Water Flow (Bridgend)</strong><br>
+              <a href="https://timeseries.sepa.org.uk/KiWIS/KiWIS?service=kisters&request=getTimeseriesValues&datasource=0&ts_path=1/133099/Q/15m.Cmd&from=2024-05-23&to=2025-07-23&returnfields=Timestamp,Value,Quality%20Code" target="_blank">
+                View API Endpoint
+              </a>
+            </li>
+            <li>
+              <strong>Water Level & Quality (Killermont)</strong><br>
+              <a href="https://timeseries.sepa.org.uk/KiWIS/KiWIS?service=kisters&type=queryServices&datasource=0&request=getTimeseriesValues&ts_id=52752010&from=2025-07-01T09:00:00&period=P15D&returnfields=Timestamp,%20Value,%20Quality%20Code" target="_blank">
+                View API Endpoint
+              </a>
+            </li>
+            <li>
+              <strong>Rainfall Levels</strong><br>
+              <a href="https://www2.sepa.org.uk/rainfall/api/Hourly/341380?all=true" target="_blank">
+                View API Endpoint
+              </a>
+            </li>
+          </ul>
+
+          <p class="card-text">
+            <strong>Pollution Data</strong><br>
+            SEPA also provides pollution data; however, it is not available via API. Instead, it must be manually downloaded from their 
+            <a href="https://informatics.sepa.org.uk/WaterClassificationHub/" target="_blank">Water Classification Hub</a>.
+            Users can search for a river, select it, and download the CSV data.
+          </p>
+
+          <div class="text-center my-3">
+            <img src="images/WaterPollution.png" class="img-fluid rounded shadow-sm" alt="SEPA Pollution Data">
+          </div>
+
+          <p class="card-text">
+            <strong>Weather Data</strong><br>
+            Several APIs are available for obtaining weather information:
+          </p>
+
+          <ul class="card-text">
+            <li>
+              <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a><br>
+              Offers a free tier, but with limited API calls and some features locked behind paid plans. One limitation is the inability to select specific locations like the River Kelvin — only broader locations such as Glasgow are available.
+              <div class="text-center my-3">
+                <img src="images/weatherapi.png" class="img-fluid rounded shadow-sm" alt="WeatherAPI Pricing">
+              </div>
+            </li>
+            <li>
+              <a href="https://openweathermap.org/api" target="_blank">OpenWeather API</a><br>
+              Offers a free tier with limited API calls, but cannot be used for commercial purposes.
+              <div class="text-center my-3">
+                <img src="images/openweathermap.png" class="img-fluid rounded shadow-sm" alt="OpenWeather Pricing">
+              </div>
+            </li>
+          </ul>
+
+
+          
+
+
         </div>
       </div>
     </div>
